@@ -1,0 +1,140 @@
+body,html{
+	background-color: #F5F5F5;
+}
+#contain{
+	width: 850px;
+    margin: 0 auto;
+    margin-top: 60px;
+    background: #fff;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+#contain .logo{
+	background: url(../images/nubia-logo.png) no-repeat;
+    background-position: 0 -55px;
+    width: 156px;
+    height: 55px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    position: relative;
+    top: 15px;
+}
+#contain .registerForm{
+	width: 370px;
+	margin:0 auto;
+}
+#contain .registerForm span{
+	font-size: 12px;
+	position: absolute;	
+}
+input[name=telphone]{
+	width: 348px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    border: 1px solid #e0e4e7;
+    vertical-align: middle;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+input[name=password]{
+	width: 348px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    border: 1px solid #e0e4e7;
+    vertical-align: middle;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+input[name=yanzhengma]{
+	width: 223px;
+	height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    border: 1px solid #e0e4e7;
+    vertical-align: middle;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+#contain .yanzengimg{
+    height: 48px;
+    width: 120px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.phone_yanzhengma{
+	position:relative;
+}
+input[name=get_yanzhengma]{
+	position: absolute;
+	width: 100px;
+    height: 54px;
+    line-height: 50px;
+    border: 1px solid #e0e4e7;
+    font-size: 12px;
+   	text-align: center;
+   	top: 0;
+   	right:10px;
+   	cursor: pointer;
+   	
+}
+input[name=passyanzhengma]{
+	width: 348px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    border: 1px solid #e0e4e7;
+    vertical-align: middle;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.agreement{
+	height: 20px;
+	line-height: 20px;
+	color: #e8380d;
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+input[name=check]{
+	vertical-align: middle;	
+}
+input[type=submit]{
+	width: 360px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background: #e8380d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.login{
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	margin-left: 220px;
+}
+.login a{
+	color: #f27f02;
+}
+/*footer栏编写*/
+#footer p{
+	text-align: center;
+	line-height: 20px;
+	height: 20px;
+	color: #ccc;
+	font-size: 12px;
+}
+#footer p span{
+	background:url(../images/govIcon.png) no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+	vertical-align: middle;
+	display: inline-block;
+	
+}
