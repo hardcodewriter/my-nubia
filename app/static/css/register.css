@@ -22,10 +22,37 @@ body,html{
 #contain .registerForm{
 	width: 370px;
 	margin:0 auto;
+	position: relative;
 }
-#contain .registerForm span{
-	font-size: 12px;
+.telphonecheck{
+	line-height: 20px;
+    height: 20px;
+    color: #F00;
+    width: 120px;
+    font-size: 12px;
 	position: absolute;	
+	top: 18px;
+	left: 368px;
+}
+.passwordcheck{
+	line-height: 20px;
+    height: 20px;
+    color: #F00;
+    width: 120px;
+    font-size: 12px;
+	position: absolute;	
+	top: 88px;
+	left: 368px;
+}
+.passCheck{
+	line-height: 20px;
+    height: 20px;
+    color: #F00;
+    width: 120px;
+    font-size: 12px;
+	position: absolute;	
+	top: 158px;
+	left: 368px;
 }
 input[name=telphone]{
 	width: 348px;
@@ -71,7 +98,7 @@ input[name=yanzhengma]{
 input[name=get_yanzhengma]{
 	position: absolute;
 	width: 100px;
-    height: 54px;
+    height: 51px;
     line-height: 50px;
     border: 1px solid #e0e4e7;
     font-size: 12px;
@@ -129,6 +156,7 @@ input[type=submit]{
 	color: #ccc;
 	font-size: 12px;
 }
+
 #footer p span{
 	background:url(../images/govIcon.png) no-repeat;
 	width: 20px;

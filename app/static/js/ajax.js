@@ -24,7 +24,6 @@ function sendAjax(url, obj) {
         }
         // 添加一个时间戳, 解决get请求的缓存问题
         url += `_=${Date.now()}`;
-        console.log(url);
         _default.data = null;
     } else if(_default.method == 'POST') {
         
@@ -38,12 +37,10 @@ function sendAjax(url, obj) {
     return new Promise(function(resolve, reject) {
         xhr.onreadystatechange = function() {
             if(xhr.readyState == 4 ) {
-                if(xhr.status == 200) {
-                    let data = xhr.response;   
-                    resolve(data);
-                } else {
-                    let data = xhr.response;   
-                    reject(data);
+                if(xhr.status == 200&&xhr.responseText!="false") { 
+                    resolve(xhr.response);       
+                }else {
+                	reject(xhr.response);
                 }
             }
         }

@@ -10,7 +10,7 @@ class CheckForm {
 	}
 	password(ps) {
 		if(/^.{6,16}$/.test(ps)) {
-			if(/[a-zA-Z]|\d+/.test(ps)){
+			if(/[A-z][0-9]|[0-9][A-z]/.test(ps)){
 				return true;
 			}
 		}
@@ -42,7 +42,7 @@ var checkInfor = (function() {
 	var yzm=null;
 	var resetTime=60;
 	//获取到“同意阅读协议”按钮
-	var $sub = document.querySelector('.agreement input');
+	var $agree = document.querySelector('.agreement input');
 	//获取到提交按钮
 	var $sub = document.querySelector('.sub input');
 	return {
@@ -59,13 +59,14 @@ var checkInfor = (function() {
 						let $div = $inps[i].parentNode.querySelector("span");
 						if(checkForm[$inps[i].name]($inps[i].value)) {
 							if($inps[i].name === 'telphone') {
-								sendAjax('php/check.php', {
+								sendAjax("../server/php/check.php", {
 									data: {
 										"telphone": $inps[i].value
 									}	
 								})
 								.then(res=>{
 									$div.innerHTML="";
+									self.success($inps[i]);
 								})
 								.catch(res=>{
 									$div.innerHTML="手机号已被注册";
@@ -80,6 +81,7 @@ var checkInfor = (function() {
 						let $div1 = $inps[i].parentNode.querySelector("span");
 						if(checkForm[$inps[i].name]($inps[i].value)) {
 							$div1.innerHTML="";
+							self.success($inps[i]);
 						}else if($inps[i].value==""){
 							$div1.innerHTML="请输入密码";
 						}else{
@@ -91,6 +93,7 @@ var checkInfor = (function() {
 							$div2.innerHTML="请输入验证码";
 						}else{
 							$div2.innerHTML="";
+							self.success($inps[i]);
 						}
 					}
 				}
@@ -112,29 +115,20 @@ var checkInfor = (function() {
 
 				},1000)	
 			};
-			
-			// $inps[0].onclick = function(e) {
-			// 	// $inps = $form.querySelectorAll('.form-control');
-			// 	// $inps = $form.querySelectorAll('.form-control');
-			// 	for(let ele of $inps) {
-			// 		// console.dir(ele.parentNode);
-			// 		//此处检测success比较好，因为检测error需要留意所有选项为空的情况，这时就要所有选项逐个focus
-			// 		//这会和ajax冲突，因为如果逐个focus可能会
-			// 		if(ele.parentNode.className.indexOf("has-success") === -1) {
-			// 			self.error(ele.parentNode);
-			// 			setTimeout(_ => {
-			// 				ele.focus();
-			// 			}, 1)
-			// 			return false;
-			// 		}
-			// 	}
-			// }
+			$sub.onclick = function(e) {
+			 	for(let i=0;i<3;i++) {
+			 		if($inps[i].className.indexOf("has-success") === -1) {
+			 			$inps[i].focus();
+			 			return false;
+			 		}
+			 	}
+			}
 		},
 		success($div) {
-			$div.className =
-				$div.className.replace(/(\s?has-error|\s?has-success)/g, '');
-			$div.className += ' has-success';
-		},
+			$div.className=$div.className.replace(/(\s?has-error|\s?has-success)/g, '');
+			
+			$div.className += 'has-success';
+		}
 		// error($div) {
 		// 	$div.className =
 		// 		$div.className.replace(/(\s?has-success|\s?has-error)/g, '');
