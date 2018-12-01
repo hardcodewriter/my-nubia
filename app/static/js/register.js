@@ -116,9 +116,10 @@ var checkInfor = (function() {
 				},1000)	
 			};
 			$sub.onclick = function(e) {
+				e=e||window.event;
 			 	for(let i=0;i<3;i++) {
 			 		if($inps[i].className.indexOf("has-success") === -1) {
-			 			$inps[i].focus();
+						$inps[i].focus();
 			 			return false;
 			 		}
 			 	}

@@ -105,7 +105,8 @@ input[name=get_yanzhengma]{
    	text-align: center;
    	top: 0;
    	right:10px;
-   	cursor: pointer;
+    cursor: pointer;
+     background-color: #fff;
    	
 }
 input[name=passyanzhengma]{

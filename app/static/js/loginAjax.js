@@ -1,8 +1,8 @@
 //  解决get请求的缓存问题
-function sendAjax(url, obj) {
+function loginAjax(url, obj) {
     const xhr = new XMLHttpRequest();
     const _default = {
-        method: 'GET',
+        method: "GET",
         data: null
     }
     if(obj){
@@ -14,7 +14,7 @@ function sendAjax(url, obj) {
 	        }
 	    }
 	}
-    _default.method = _default.method.toUpperCase()
+    _default.method = _default.method.toUpperCase();
     if(_default.method == 'GET') {
         let flag = url.indexOf('?') == -1 ? "?" : "&";
         url += flag;
@@ -36,10 +36,10 @@ function sendAjax(url, obj) {
     return new Promise(function(resolve, reject) {
         xhr.onreadystatechange = function() {
             if(xhr.readyState == 4 ) {
-                if(xhr.status == 200&&xhr.responseText!="false") {
-                    resolve();       
+                if(xhr.status == 200&&xhr.responseText=="true") {
+                    resolve(xhr.response);       
                 }else {
-                	reject();
+                	reject(xhr.response);
                 }
             }
         }

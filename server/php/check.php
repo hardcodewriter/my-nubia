@@ -9,7 +9,6 @@
             echo "false";
             break;
         }
-//        $res = $result -> fetch_assoc();
     }
 
 
