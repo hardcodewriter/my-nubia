@@ -1,0 +1,19 @@
+{
+  "name": "my-nubia",
+  "version": "1.0.0",
+  "description": "write a web like  nubia\r *项目主要包括登录、注册、购物车、电商首页等",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hardcodewriter/my-nubia.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hardcodewriter/my-nubia/issues"
+  },
+  "homepage": "https://github.com/hardcodewriter/my-nubia#readme"
+}
