@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_953003_eyinwi86nwe.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_953003_f275n6nsyxh.css">
     <link rel="stylesheet" href="../common/common.css">
 </head>
 <body>
@@ -14,37 +14,48 @@
         <div class="logo">
             <a href=""><img src="../common/images/logo.png"></a>
         </div>
-        <div class="nav">
-          <ul>
+        <div id="nav">
+          <ul class="slide">
               <li><a href="">商城</a></li>
-              <li>
+              <li class="second">
                   <a href="">手机</a>
-                <div class="list">
-                    <!-- <div class="contain">
-                        <a href="" class="arrowLeft"><i class=""></i></a>
-                        <ul>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                        </ul>
-                        <a href="" class="arrowRight"><i class=""></i></a>
+                  <div class="list">
+                        <div class="contain">
+                            <a href="" class="arrowLeft"><i class="iconfont arrow-right"></i></a>
+                            <ul>
+                                <li><a href=""><img src="../common/images/img01.png"><span>红魔Mars电竞手机</span></a></li>
+                                <li><a href=""><img src="../common/images/img02.png"><span>X</span></a></li>
+                                <li><a href=""><img src="../common/images/img04.png"><span>Z18</span></a></li>
+                                <li><a href=""><img src="../common/images/img03.png"><span>红魔电竞手机</span></a></li>
+                                <li><a href=""><img src="../common/images/img05.png"><span>Z18mini</span></a></li>
+                                <li><a href=""><img src="../common/images/img06.png"><span>Z17S全面屏</span></a></li>
+                                <li><a href=""><img src="../common/images/img07.png"></a></li>
+                                <li><a href=""><img src="../common/images/img08.png"></a></li>
+                                <li><a href=""><img src="../common/images/img09.png"></a></li>
+                            </ul>
+                            <a href="" class="arrowRight"><i class="iconfont iconfontyoujiantou"></i></a>
+                        </div>
                     </div>
-                </div> -->
-              </li>
-              <li><a href="">红魔手机</a></li>
+            </li>
+              <li><a href="">红魔手机</a>
+                <div class="list">
+                    <div class="contain">
+                        <a href="" class="arrowLeft"><i class="iconfont arrow-right"></i></a>
+                        <ul>
+                            <li><a href=""><img src="../common/images/img01.png"><span>红魔Mars电竞手机</span></a></li>
+                            <li><a href=""><img src="../common/images/img02.png"><span>X</span></a></li>
+                            <li><a href=""><img src="../common/images/img04.png"><span>Z18</span></a></li>
+                            <li><a href=""><img src="../common/images/img03.png"><span>红魔电竞手机</span></a></li>
+                            <li><a href=""><img src="../common/images/img05.png"><span>Z18mini</span></a></li>
+                            <li><a href=""><img src="../common/images/img06.png"><span>Z17S全面屏</span></a></li>
+                            <li><a href=""><img src="../common/images/img07.png"></a></li>
+                            <li><a href=""><img src="../common/images/img08.png"></a></li>
+                            <li><a href=""><img src="../common/images/img09.png"></a></li>
+                        </ul>
+                        <a href="" class="arrowRight"><i class="iconfont iconfontyoujiantou"></i></a>
+                    </div>
+                </div>
+            </li>
               <li><a href="">配件</a></li>
               <li><a href="">摄影</a></li>
               <li><a href="">服务</a></li>
@@ -57,6 +68,17 @@
         <div class="shop"><a href="">购物车<i class="iconfont gouwuchekong"></i></a></div>
     </div>
     </header>
+    <script src="../common/js/jquery.js"></script>
+    <script>
+    //  var $liAll=$(".slide");
+     $(".slide").on('mouseenter','li',function(){
+         $(this).children('.list').stop().slideDown(500);
+        //  $(".list").css('max-height',"240");
+     })
+     $('.slide').on('mouseleave','li',function(){
+        $(this).children('.list').stop().slideUp(500);
+     })
+    </script>
     
 </body>
 </html>

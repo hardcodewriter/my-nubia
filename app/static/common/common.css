@@ -1,6 +1,6 @@
 
 body,html{
-	font-size: 0.12rem; "微软雅黑";	
+	font-size: 0.12rem;
 }
 body,html,ul,li{
 	padding: 0;
@@ -38,8 +38,10 @@ i,em{font-style: normal;}
 }
 .header{
     width: 1200px;
+    height: 65px;
     background-color: #282828;
     margin: 0 74.5px;
+    overflow: hidden;
 }
 .logo{
     width: 140px;
@@ -51,13 +53,13 @@ i,em{font-style: normal;}
     width: 140px;
     height: 50px;
 }
-.nav{
+#nav{
     width: 742px;
     height: 65px;
     background-color: #282828;
     margin-left: 225px;
 }
-.nav ul{
+#nav ul{
     display: flex;
     justify-content: space-between;
     float: left;
@@ -65,11 +67,12 @@ i,em{font-style: normal;}
     height: 65px;
     margin: 0 auto;
 }
-.nav ul li{
+#nav ul li{
     float: left; 
 }
-.nav ul li a{
+#nav ul li a{
     display: flex;
+    /* display: block; */
     float: left;
     width: 100%;
     height: 65px;
@@ -78,9 +81,91 @@ i,em{font-style: normal;}
     text-align: center;
     color: #fff;
 }
-.nav ul li a:hover{
-    color: #95a2a2;
+#nav .list{
+    position: absolute;
+    top: 65px;
+    height: 240px;
+    left: 74.5px;
+    background: rgba(0,0,0,0.8);
+    /* max-height: 0; */
+    overflow: hidden;
+    display:none;
+    /* transition: all 0.5s; */
 }
+/* #nav .list ul li:nth-child(2) a:hover{
+    max-height: 240px;
+} */
+#nav .contain{
+     position: relative;
+    width: 1200px;
+    height: 240px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#nav .contain ul{
+    width: 9999px;
+    height: 165px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+#nav .contain li{
+    float: left;
+    width: 195px;
+    height: 165px;
+}
+#nav .contain ul a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 195px;
+    height: 165px;
+    margin: 0 auto;
+}
+/* .contain ul a:hover{
+    color: #999;
+} */
+#nav .contain ul span{
+    display: block;
+    height: 30px;
+    text-align: center;
+   line-height: 30px;
+}
+#nav .contain img{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+#nav .list .contain .arrowLeft{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 100px;
+    left: 0;
+    color: #999;
+    font-size: 16px;
+}
+#nav .list .contain .arrowRight{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 100px;
+    left: 1190px;
+    color: #999;
+    font-size: 16px;
+}
+#nav ul li a:hover{
+    color: #95a2a2;
+    
+}
+ /* .nav ul li:nth-child(2) a:hover{
+    display: block;
+    height: 240px;;
+}  */
+
 .shop{
     position: relative;
     float: right;
