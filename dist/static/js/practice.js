@@ -1,1 +1,0 @@
-"use strict";function f1(){console.log(1)}function f2(){console.log(2)}

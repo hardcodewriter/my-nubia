@@ -1,80 +1,106 @@
 var gulp = require('gulp');
-var uglify = require("gulp-uglify");
-var rename = require('gulp-rename');
-const babel = require('gulp-babel');
-var connect = require('gulp-connect');
-var csso = require('gulp-csso');
-const htmlmin = require('gulp-htmlmin');
-const imagemin = require('gulp-imagemin');
-const rev = require('gulp-rev');
-const del = require('del');
-var runSequence = require('run-sequence');
 
-gulp.task('default', function() {
-  // 将你的默认的任务代码放在这
+var concat = require('gulp-concat'),
+	babel = require('gulp-babel'),
+	miniImage = require('gulp-imagemin'),
+	less = require('gulp-less'),
+	miniCss = require('gulp-minify-css'),
+	miniHtml = require('gulp-minify-html'),
+	sass = require('gulp-sass'),
+	miniJs = require('gulp-uglify'),
+	del = require('del'),
+	connect = require('gulp-connect'),
+	flatten = require('gulp-flatten'),
+	rename = require('gulp-rename');
+
+/**
+ * 定义一个js文件夹加载任何文件夹的js的函数
+ */
+var miniAnyJs = function (dir) {
+	gulp.src('app/static/js/' + dir + '/*.js')
+		.pipe(concat(dir + '.js'))        //合并
+		.pipe(babel({                    //es6 -> es5
+			presets: ['@babel/env']
+		}))
+		// .pipe(miniJs())					 //压缩
+        .on('error',function (err) {
+            console.log(err);
+            this.emit('end');
+        })
+		.pipe(rename({
+			suffix: '.min'
+		}))
+		.pipe(gulp.dest('dist/app/static/js/'))  //输出到该文件夹下
+		.pipe(connect.reload());
+}
+/**
+ * 定义一个css文件夹加载任何文件夹的css的函数
+ */
+
+var miniAnyCss = function(dir) {
+	gulp.src('app/static/css/'+dir+'/*.css')
+		.pipe(concat(dir+'.css'))
+		// .pipe(miniCss())
+		.on('error',function (err) {
+			console.log(err);
+			this.emit('end');
+		})
+		.pipe(rename({
+			suffix: '.min'
+		}))
+		.pipe(gulp.dest('dist/app/static/css/'))
+		.pipe(connect.reload());
+}
+//压缩合并index主页的js
+gulp.task("miniIndexJs", function () {
+	miniAnyJs('index');
+	miniAnyJs('login');
+	miniAnyJs('jquery');
+	miniAnyJs('until');
 });
-// 直接压缩js文件
-gulp.task('minijs',()=>
-gulp.src('app/**/*.js')
-    .pipe(babel({
-        presets: ['@babel/env']
-    }))
-    .pipe(uglify())  
-    .pipe(rev())               
-    .pipe(gulp.dest('dist'))
-    .pipe( rev.manifest() )
-    .pipe( gulp.dest( 'rev/js'))
-)    
-//压缩css文件
-gulp.task('minicss', function () {
-    return gulp.src('app/**/*.css')
-        .pipe(csso({
-            restructure: false,
-            sourceMap: true,
-            debug: true
-        }))
-        .pipe(gulp.dest('./out'));
+//压缩合并index的css
+gulp.task("miniIndexCss", function () {
+	miniAnyCss('index');
+	miniAnyCss('login');
+	miniAnyCss('register');
+	miniAnyCss('common');
 });
-//压缩h5文件
-gulp.task('minih5', () => {
-    return gulp.src('app/**/*.html')
-      .pipe(htmlmin({ collapseWhitespace: true }))
-      .pipe(gulp.dest('dist'));
-  });
-//压缩图片文件
-gulp.task('default', () =>
-    gulp.src('app/static/images/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('dist/images'))
-);
-//es6转换es5环境
-gulp.task('default', () =>
-    gulp.src('src/app.js')
-        .pipe(babel({
-            presets: ['@babel/env']
-        }))
-        .pipe(gulp.dest('dist'))
-)
-//监听js、html改变
-gulp.task('watch', function() {
-    gulp.watch('app/**/*.html', ['minihtml'])
-    gulp.watch('app/**/*.js', ['minijs'])
+//压缩html
+gulp.task('miniHtml', function () {
+	gulp.src('app/*.html')
+		// .pipe(miniHtml())
+        .on('error',function (err) {
+            console.log(err);
+            this.emit('end');
+        })
+		.pipe(gulp.dest('dist/app/'))
+		.pipe(connect.reload());
 })
-//重命名
-gulp.task("rename",()=>
-    gulp.src("app/static/**/*.js")
-    .pipe(rename(function (path) {
-    path.dirname += "/ciao";
-    path.basename += "-goodbye";
-    path.extname = ".md";
-    }))
-    .pipe(gulp.dest("dist"))
-)
-//重开服务器
-gulp.task('connect', function() {
-    connect.server({
-        root: 'dist',
-        port: '7777',
-        livereload: true
-    });
-  });
+//压缩图片
+gulp.task('miniImage', function () {
+	gulp.src('app/static/images/**/*')
+		// .pipe(miniImage())
+		.pipe(flatten())
+		.pipe(gulp.dest('dist/app/static/images/'))
+	// .pipe(connect.reload());
+})
+//执行所有压缩任务
+gulp.task('miniAll', ['miniIndexJs', "miniIndexCss", 'miniHtml'])
+//开启服务器
+gulp.task('server', function () {
+	connect.server({
+		root: 'dist',
+		port: '7777',
+		livereload: true
+	});
+})
+//开启事件监听
+gulp.task('watch', function () {
+	gulp.watch('app/**/*.*', ['miniAll']);
+	gulp.watch('app/app/static/images/**/*', ['miniImage']);
+})
+//开启所有事件
+gulp.task('default', ['miniAll', 'miniImage', 'watch', 'server']);
+gulp.task('clean', function () {
+	del('dist')
+})

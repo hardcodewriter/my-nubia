@@ -52,12 +52,16 @@ var swipper=(function(){
         }
     }
 }());
+function headerReady(){
+    swiper.init();
+}
 swipper.init();
 // 关于banner图下六个图标的动画
-console.log(1111);
 $(".banner2-left").on("mouseenter","i",function(){
     $(this).css("color","#fff").siblings().css("color","#c0c0bd");
     $(this).css("background-color","#f35c49").siblings().css("background-color","#f4f3ef");;
 })
 //引入header标签
-$("#header-wrap").load("static/common/common.html #wrapper");
+$("#header-wrap").load("static/common.html #wrapper",function(){
+    headerReady();
+});
