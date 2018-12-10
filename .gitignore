@@ -1,2 +1,6 @@
+<<<<<<< HEAD
+node_modules
+=======
 node_modules 
 .gulpfile.js
+>>>>>>> 2beecf7cbb52c3e994cc2af1c680b9c16bd56f6d

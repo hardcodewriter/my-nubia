@@ -1,0 +1,117 @@
+/* 通用样式 */
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+/* 主体内容样式 */
+#main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 75px;
+}
+/* 热门产品样式 */
+#main #remen .top {
+    /* background: #000; */
+    height: 95px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#main #remen .top p{
+    line-height: 95px;
+    height: 95px;
+}
+#main #remen .top .p1{
+    text-align: left;
+    font-size: 23px;
+}
+#main #remen .top .p1{
+    color: #7e7e7e;
+}
+
+
+#main #remen .top .p2{
+    text-align: right;
+    font-size: 13px;
+    align-items: center;
+}
+#main #remen .top .p2 a{
+    color: #ed6042;
+}
+
+
+
+#main #remen ul{
+    display: flex;
+    justify-content: space-around;
+}
+#main #remen .bottom .list {
+    height: 450px;
+    flex: 1;
+    background: #f4f3ef;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+} 
+#main #remen ul li div img{
+    width: 100%;
+    height: 308px;
+    margin-top:10px;
+}
+#main #remen ul li:last-child{
+    margin-right:0; 
+}
+#main #remen ul li div p{
+    color: #fe6771;
+    text-align: center;
+}
+#main #remen ul li div .p1{
+    color: #000000;
+    font-size: 18px;
+}
+#main #remen .bottom .jiage{
+    /* background: #000; */
+    width: 100%;
+    height: 100px;
+}
+#main #remen .bottom .jiage{
+    width: 100%;
+    height: 80px;
+    font-size: 15px;
+    padding-top: 20px;
+    color: #f35c49;
+    /* background: #000; */
+    text-align: center;
+    display:flex;
+    justify-content: center;
+}
+#main #remen .bottom .jiage li div{
+    border: 1px solid white;
+    background: white;
+    border-radius: 18px;
+    height: 35px;
+    width: 116px;
+    line-height: 35px;
+    /* margin-bottom: 20px;
+    float: left;
+    position: relative;
+    bottom: 15px;
+    left: 15px; */
+}
+#main #remen .bottom .jiage li div:last-child{
+    margin-left: 10px;
+    color: white;
+    background: #f35c49;
+}
+#main #remen .bottom li .box1 img:hover{
+    margin-top: -5px;
+}
+#main #remen .bottom li .goumai{
+    display: none; 
+    margin-top: 30px;
+}
+/* #main #remen .bottom li .limi {
+     display: none;
+} */
