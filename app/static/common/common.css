@@ -194,7 +194,7 @@ i,em{font-style: normal;}
     position: absolute;
 
 }
-#footer{
+.footer{
     background-color: #efeeeb;
     margin: 0 auto;
 }
@@ -239,4 +239,83 @@ i,em{font-style: normal;}
     width: 120px;
     height: 30px;
     margin-top:10px;
+}
+#footer-banner{
+    background-color: #fff;
+    height: 238px;
+}
+.foot-banner{
+    background-color: #fff;
+    height: 208px;
+    margin: 10px auto;
+    width: 1140px;
+    text-align: center;
+}
+.foot-banner .little-logo{
+    width: 105px;
+    height: 60px;
+     margin: 0 auto;
+}
+.foot-banner .little-logo img{
+    width: 105px;
+    height: 60px;
+}
+.foot-banner .icon{
+    width: 1140px;
+    height: 48px;
+    text-align: center;
+}
+.foot-banner .icon a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.foot-banner .icon a span:hover{
+    color: #e83100;
+}
+.foot-banner .icon a span{
+    display: inline-block;
+    font-size: 32px;
+    color: #000;
+}
+.text span{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text span>img{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+.text span>a{
+    color: #000;
+}
+.text .cnnic{
+    width: 81px;
+    height: 30px;
+}
+.text .cert{
+    width: 84px;
+    height: 30px;
+}
+.text .foot-nav a{
+  display: inline-block;
+  color: #e83100;
+  padding-right: 5px;
+}
+.text .foot-nav button{
+    /* background-color: #e9e8e6; */
+    width: 91px;
+    height: 16px;
+    padding-left: 16px;
+    border-radius: 10px;
+    border: 0px;
+    background:url(../common/images/spritesheet.png) no-repeat;
+    background-position:1px -688px ;
+    /* background-size: 100%; */
+}
+.text a:hover{
+    color: #e83100;
 }
