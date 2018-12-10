@@ -24,7 +24,7 @@ i,em{
 input{
 	outline: none;
 }
-.clearfix{
+.clearfix:after{
 	content: " ";
 	height: 0;
 	overflow: hidden;
