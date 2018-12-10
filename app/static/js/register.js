@@ -130,11 +130,6 @@ var checkInfor = (function() {
 			
 			$div.className += 'has-success';
 		}
-		// error($div) {
-		// 	$div.className =
-		// 		$div.className.replace(/(\s?has-success|\s?has-error)/g, '');
-		// 	$div.className += ' has-error';
-		// 	return true;
-		// }
+		
 	}
 }());
