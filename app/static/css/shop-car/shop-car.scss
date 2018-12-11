@@ -1,0 +1,36 @@
+.content{
+    width: 1200px;
+    margin: 0 auto;
+}
+#bg-cart{
+    width: 1290px;
+    height: 180px;
+    background: url(../images/bg_payorder_1.png) no-repeat center;
+    background-size: 100%;
+    margin: 0 auto;
+}
+#shop-car-wrap{
+    width: 100%;
+    .contain{
+        width: 1200px;
+        margin:0 auto;
+        .type-count{
+            height: 20px;
+            line-height: 20px;
+            color: #747774;
+        }
+        table{
+            width: 100%;
+                td{
+                    text-align: center;
+                    height: 50px;
+                    line-height: 50px;
+                    color: #727171;
+                    background: #f7f9f9;
+                    font-size: 14px;
+                    border: 1px solid #eef0f0 !important;
+                }
+            
+        }
+    }
+}

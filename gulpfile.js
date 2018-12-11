@@ -63,6 +63,7 @@ gulp.task("miniIndexJs", function () {
 	miniAnyJs('index');
 	miniAnyJs('login');
 	miniAnyJs('register');
+	miniAnyJs("shop-car");
 	miniAnyJs('until');
 });
 //压缩合并index的css
@@ -71,6 +72,7 @@ gulp.task("miniIndexCss", function () {
 	miniAnyCss('login');
 	miniAnyCss("tel_register");
 	miniAnyCss('register');
+	miniAnyCss("shop-car");
 	miniAnyCss('blank_shopcar');
 	miniAnyCss('common');
 });

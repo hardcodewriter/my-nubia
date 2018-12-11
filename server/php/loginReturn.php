@@ -5,6 +5,7 @@
  * Date: 2018/11/22
  * Time: 10:12
  */
+header('Access-Control-Allow-Origin: *');
 header("content-type:text/html;charset=utf-8");
 $password = $_POST["password"];
 $tel = $_POST["telphone"];
@@ -20,6 +21,8 @@ $result = $link -> query($sql);
 while ($res = $result -> fetch_assoc()){
     if ($res["tel"] == $tel&&$res["password"] == $password) {
         echo "<script>alert('登录成功') 
-        setTimeout(history.back(http://localhost:7777/app/shop-mall.html),3000)</script>";
+        history.back(http://localhost:1234/php/my-nubia//app/shop-mall.html))</script>";
+    }else{
+        echo "cao";
     }
 }

@@ -1,4 +1,5 @@
 <?php
+    header('Access-Control-Allow-Origin:*');
   	$tel = $_GET["telphone"];
     $link = new mysqli("localhost","root","","nubia",3306);
     $link -> query("set names utf8");

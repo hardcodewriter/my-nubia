@@ -59,7 +59,7 @@ var checkInfor = (function() {
 						let $div = $inps[i].parentNode.querySelector("span");
 						if(checkForm[$inps[i].name]($inps[i].value)) {
 							if($inps[i].name === 'telphone') {
-								sendAjax("../server/php/check.php", {
+								sendAjax("http://localhost:1234/php/my-nubia/server/php/login.php", {
 									data: {
 										"telphone": $inps[i].value
 									}	

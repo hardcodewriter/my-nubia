@@ -5,6 +5,7 @@
  * Date: 2018/11/22
  * Time: 10:12
  */
+header('Access-Control-Allow-Origin: *');
 header("content-type:text/html;charset=utf-8");
 $password = $_POST["password"];
 $tel = $_POST["telphone"];
