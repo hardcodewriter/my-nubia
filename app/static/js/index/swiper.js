@@ -29,7 +29,13 @@ var swiper = (function () {
 
                 }
             })
-
+            $(".slide").on('mouseenter', 'li', function () {
+                $(this).children('.list').stop().slideDown(300);
+                $(this).children('.list').css("display", "block");
+            })
+            $('.slide').on('mouseleave', 'li', function () {
+                $(this).children('.list').stop().slideUp(300);
+            })
             this.$nextBtn.click(function () {
                 if (index <= _this.$count) {
                     index++;
@@ -49,12 +55,14 @@ var swiper = (function () {
     }
 }())
 swiper.init($('.box'));
+//引入header标签
+function headerReady() {
+    swiper.init();
+  }
+  $("#header-wrap").load("common.html #wrapper", function () {
+    headerReady();
+  });
+  $("#footer-wrap").load("common.html #footer");
 
-var $liAll = $(".slide");
-$(".slide").on('mouseenter', 'li', function () {
-    $(this).children('.list').stop().slideDown(300);
-    $(this).children('.list').css("display", "block");
-})
-$('.slide').on('mouseleave', 'li', function () {
-    $(this).children('.list').stop().slideUp(300);
-})
+
+

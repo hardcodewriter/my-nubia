@@ -1,6 +1,6 @@
+'use strict'
 class CheckForm {
 	constructor() {
-
 	}
 	username(name) {
 		if(/\w{6,10}/.test(name)) {
@@ -117,9 +117,9 @@ var checkInfor = (function() {
 			};
 			$sub.onclick = function(e) {
 				e=e||window.event;
-			 	for(let i=0;i<3;i++) {
-			 		if($inps[i].className.indexOf("has-success") === -1) {
-						$inps[i].focus();
+			 	for(let j=0;j<3;j++) {
+			 		if($inps[j].className.indexOf("has-success") === -1) {
+						$inps[j].focus();
 			 			return false;
 			 		}
 			 	}
@@ -127,7 +127,6 @@ var checkInfor = (function() {
 		},
 		success($div) {
 			$div.className=$div.className.replace(/(\s?has-error|\s?has-success)/g, '');
-			
 			$div.className += 'has-success';
 		}
 		

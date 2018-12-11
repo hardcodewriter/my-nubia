@@ -1,432 +1,431 @@
-.content{
-    width: 1200px;
-    margin: 0 auto;
-}
+@charset "UTF-8";
+.content {
+  width: 1200px;
+  margin: 0 auto; }
+
 /* 空留的头部位置 */
-#header-wrap{
-    height: 65px;
-    width: 100%;
-}
+#header-wrap {
+  height: 65px;
+  width: 100%; }
+
 /* 编写bannner */
-#banner-wrap{
-    width: 100%;
-    height:520px;
-    position: relative;
-}
-.banner{
-    height: 100%;
-    width: 100%;
-}
-#banner-wrap .secondMenu{
-    height:520px;
-    width: 240px;
-    position: absolute;
-    left: 160px;
-    top: 0;
-    z-index: 90;
-    background-color: #f7f7f7;
-}
+#banner-wrap {
+  width: 100%;
+  height: 520px;
+  position: relative; }
 
-#banner2-wrap{
-    margin-top: 10px;
-}
-.banner2-left{
-    width: 180px;
-    height: 240px;
-}
-#banner-wrap .secondMenu>li{
-    height: 65px;
-    line-height: 65px;
-    padding-left: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 16px;
-    position: relative;   
-}
-#banner-wrap .secondMenu li>a{
-    display: block;
-    width: 100%;
-    height: 100%;
-     color: #878787;
-}
-#banner-wrap .secondMenu li ul{
-    height: 520px;
-    width: 240px;
-    display: none;
-    left: 240px;
-    top: 0px;
-    background-color: #fff;
-    position: absolute;
-}
-#banner-wrap .secondMenu li>ul>li{
-    line-height: 70px;
-    height: 70px;
-}
-#banner-wrap .secondMenu li>ul>li:hover span{
-    color: #e8340e;
-}
-#banner-wrap .secondMenu li ul li .menu1{
-    background-image: url(../images/menu1.png);
-    background-size: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 5px;
-    float: left;
-}
-#banner-wrap .secondMenu li ul .menu2{
-    background-image: url(../images/menu2.png);
-    background-size: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 0px;
-    float: left;
-}
-#banner-wrap .secondMenu li ul .menu3{
-    background-image: url(../images/menu3.png);
-    background-size: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 5px;
-    /* float: left; */
-}
-#banner-wrap .secondMenu li ul .menu4{
-    background-image: url(../images/menu4.png);
-    background-size: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 5px;
-    /* float: left; */
-}
-#banner-wrap .secondMenu li ul .menu5{
-    background-image: url(../images/menu5.png);
-    background-size: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 5px;
-}
-#banner-wrap .secondMenu li ul .menu6{
-    background-image: url(../images/menu6.png);
-    background-size: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 0px;
-    float: left;
-}
-#banner-wrap .secondMenu li ul .menu7{
-    background-image: url(../images/menu7.jpg);
-    background-size: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 5px;
-}
-#banner-wrap .secondMenu li ul .menu8{
-    background-image: url(../images/menu8.png);
-    background-size: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 0px;
-    float: left;
-}
-#banner-wrap .secondMenu li ul .menu9{
-    background-image: url(../images/menu9.jpg);
-    background-size: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 5px;
-    /* float: left; */
-}
-#banner-wrap .secondMenu li ul .menu10{
-    background-image: url(../images/menu10.png);
-    background-size: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 5px;
-    /* float: left; */
-}
-#banner-wrap .secondMenu li ul .menu11{
-    background-image: url(../images/menu11.png);
-    background-size: 100%;
-    width: 60px;
-    height: 60px;
-    margin-left: 20px;
-    margin-top: 5px;
-    /* float: left; */
-}
-#banner-wrap .secondMenu li ul li span{
-    font-size: 12px;
-    height: 70px;
-    line-height: 70px;
-    float: left;
-    color: #666666;
-    margin-top:-60px;
-    margin-left: 90px;
-}
-#banner-wrap .secondMenu li ul li:nth-child(2):hover span{
-    color: #e8340e;
-}
-#banner-wrap .secondMenu li ul li:nth-child(2) span{
-    font-size: 12px;
-    height: 70px;
-    line-height: 70px;
-    float: left;
-    color: #666666;
-    margin-top:-5px;
-    margin-left: 10px;
-}
-#banner-wrap .secondMenu li ul li:nth-child(3):hover span{
-    color: #e8340e;
-}
-#banner-wrap .secondMenu li ul li:nth-child(3) span{
-    font-size: 12px;
-    height: 70px;
-    line-height: 70px;
-    float: right;
-    color: #666666;
-    margin-top:-66px;
-    margin-right: 85px;
-}
-#banner-wrap .secondMenu li ul li:nth-child(4):hover span{
-    color: #e8340e;
-}
-#banner-wrap .secondMenu li ul li:nth-child(4) span{
-    font-size: 12px;
-    height: 70px;
-    line-height: 70px;
-    float: right;
-    color: #666666;
-    margin-top:-66px;
-    margin-right: 85px;
-}
-#banner-wrap .secondMenu li:nth-child(3) ul li:nth-child(3) span{
-    font-size: 12px;
-    height: 70px;
-    line-height: 70px;
-    float: right;
-    color: #666666;
-    margin-top:-62px;
-    margin-right: 44px;
-}
-#banner-wrap .secondMenu li:nth-child(3) ul li:nth-child(4):hover span{
-    color: #e8340e;
-}
-#banner-wrap .secondMenu li:nth-child(3) ul li:nth-child(4) span{
-    font-size: 12px;
-    height: 70px;
-    line-height: 70px;
-    float: right;
-    color: #666666;
-    margin-top:-62px;
-    margin-right: 67px;
-}
-#banner-wrap .secondMenu li:nth-child(3) ul li:nth-child(3):hover span{
-    color: #e8340e;
-}
-#banner-wrap .secondMenu li:nth-child(2) ul{
-    top: -65px;
-}
-#banner-wrap .secondMenu li:nth-child(3) ul{
-    top: -130px;
-}
-#banner-wrap .secondMenu li:nth-child(4) ul{
-    top: -195px;
-}
-#banner-wrap .secondMenu li:nth-child(5) ul{
-    top: -260px;
-}
-#banner-wrap .secondMenu li:nth-child(6) ul{
-    top: -325px;
-}
-#banner-wrap .secondMenu li:nth-child(7) ul{
-    top: -390px;
-}
-#banner-wrap .secondMenu li:nth-child(8) ul{
-    top: -455px;
-}
-#banner-wrap .secondMenu li:hover ul{
-    display: block;
-}
-#banner-wrap .secondMenu>li:hover{
-    background-color: #efefef;
-}
-#banner-wrap .secondMenu>li:hover>a{
-    color: #e8340e;
-}
+.banner {
+  height: 100%;
+  width: 100%; }
+
+#banner-wrap .secondMenu {
+  height: 520px;
+  width: 240px;
+  position: absolute;
+  left: 160px;
+  top: 0;
+  z-index: 90;
+  background-color: #f7f7f7; }
+
+#banner2-wrap {
+  height: 180px;
+  margin-top: 10px; }
+
+.banner2-left {
+  width: 180px;
+  height: 240px; }
+
+#banner-wrap .secondMenu > li {
+  height: 65px;
+  line-height: 65px;
+  padding-left: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  position: relative; }
+
+#banner-wrap .secondMenu li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #878787; }
+
+#banner-wrap .secondMenu li ul {
+  height: 520px;
+  width: 240px;
+  display: none;
+  left: 240px;
+  top: 0px;
+  background-color: #fff;
+  position: absolute; }
+
+#banner-wrap .secondMenu li > ul > li {
+  line-height: 70px;
+  height: 70px; }
+
+#banner-wrap .secondMenu li > ul > li:hover span {
+  color: #e8340e; }
+
+#banner-wrap .secondMenu li ul li .menu1 {
+  background-image: url(../images/menu1.png);
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 5px;
+  float: left; }
+
+#banner-wrap .secondMenu li ul .menu2 {
+  background-image: url(../images/menu2.png);
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 0px;
+  float: left; }
+
+#banner-wrap .secondMenu li ul .menu3 {
+  background-image: url(../images/menu3.png);
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 5px;
+  /* float: left; */ }
+
+#banner-wrap .secondMenu li ul .menu4 {
+  background-image: url(../images/menu4.png);
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 5px;
+  /* float: left; */ }
+
+#banner-wrap .secondMenu li ul .menu5 {
+  background-image: url(../images/menu5.png);
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 5px; }
+
+#banner-wrap .secondMenu li ul .menu6 {
+  background-image: url(../images/menu6.png);
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 0px;
+  float: left; }
+
+#banner-wrap .secondMenu li ul .menu7 {
+  background-image: url(../images/menu7.jpg);
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 5px; }
+
+#banner-wrap .secondMenu li ul .menu8 {
+  background-image: url(../images/menu8.png);
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 0px;
+  float: left; }
+
+#banner-wrap .secondMenu li ul .menu9 {
+  background-image: url(../images/menu9.jpg);
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 5px;
+  /* float: left; */ }
+
+#banner-wrap .secondMenu li ul .menu10 {
+  background-image: url(../images/menu10.png);
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 5px;
+  /* float: left; */ }
+
+#banner-wrap .secondMenu li ul .menu11 {
+  background-image: url(../images/menu11.png);
+  background-size: 100%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 5px;
+  /* float: left; */ }
+
+#banner-wrap .secondMenu li ul li span {
+  font-size: 12px;
+  height: 70px;
+  line-height: 70px;
+  float: left;
+  color: #666666;
+  margin-top: -60px;
+  margin-left: 90px; }
+
+#banner-wrap .secondMenu li ul li:nth-child(2):hover span {
+  color: #e8340e; }
+
+#banner-wrap .secondMenu li ul li:nth-child(2) span {
+  font-size: 12px;
+  height: 70px;
+  line-height: 70px;
+  float: left;
+  color: #666666;
+  margin-top: -5px;
+  margin-left: 10px; }
+
+#banner-wrap .secondMenu li ul li:nth-child(3):hover span {
+  color: #e8340e; }
+
+#banner-wrap .secondMenu li ul li:nth-child(3) span {
+  font-size: 12px;
+  height: 70px;
+  line-height: 70px;
+  float: right;
+  color: #666666;
+  margin-top: -66px;
+  margin-right: 85px; }
+
+#banner-wrap .secondMenu li ul li:nth-child(4):hover span {
+  color: #e8340e; }
+
+#banner-wrap .secondMenu li ul li:nth-child(4) span {
+  font-size: 12px;
+  height: 70px;
+  line-height: 70px;
+  float: right;
+  color: #666666;
+  margin-top: -66px;
+  margin-right: 85px; }
+
+#banner-wrap .secondMenu li:nth-child(3) ul li:nth-child(3) span {
+  font-size: 12px;
+  height: 70px;
+  line-height: 70px;
+  float: right;
+  color: #666666;
+  margin-top: -62px;
+  margin-right: 44px; }
+
+#banner-wrap .secondMenu li:nth-child(3) ul li:nth-child(4):hover span {
+  color: #e8340e; }
+
+#banner-wrap .secondMenu li:nth-child(3) ul li:nth-child(4) span {
+  font-size: 12px;
+  height: 70px;
+  line-height: 70px;
+  float: right;
+  color: #666666;
+  margin-top: -62px;
+  margin-right: 67px; }
+
+#banner-wrap .secondMenu li:nth-child(3) ul li:nth-child(3):hover span {
+  color: #e8340e; }
+
+#banner-wrap .secondMenu li:nth-child(2) ul {
+  top: -65px; }
+
+#banner-wrap .secondMenu li:nth-child(3) ul {
+  top: -130px; }
+
+#banner-wrap .secondMenu li:nth-child(4) ul {
+  top: -195px; }
+
+#banner-wrap .secondMenu li:nth-child(5) ul {
+  top: -260px; }
+
+#banner-wrap .secondMenu li:nth-child(6) ul {
+  top: -325px; }
+
+#banner-wrap .secondMenu li:nth-child(7) ul {
+  top: -390px; }
+
+#banner-wrap .secondMenu li:nth-child(8) ul {
+  top: -455px; }
+
+#banner-wrap .secondMenu li:hover ul {
+  display: block; }
+
+#banner-wrap .secondMenu > li:hover {
+  background-color: #efefef; }
+
+#banner-wrap .secondMenu > li:hover > a {
+  color: #e8340e; }
+
 /* 编写banner轮播图 */
-#banner-wrap{
-    width: 100%;
-    height: 520px;
-    overflow: hidden;
-}
-#banner-wrap .banner{
-    width: 100%;
-    height: 520px;
-}
-#banner-wrap .banner>ul{
-    width: 100%;
-    height: 520px;
-    overflow: hidden;
-}
-#banner-wrap .banner>ul>li{
-    width: 100%;
-    height: 520px;
-    overflow: hidden;
-}
-#banner-wrap .banner>ul>li>img{
-    width: 2260px;
-    height: 520px;
-    margin-left:-350px;
-}
-.banner .banner-pre{
-    width: 41px;
-    height: 69px;
-    position: absolute;
-    left: 420px;
-    top: 42%;
-    border-radius: 18px;
-    cursor: pointer;
-    z-index: 60;
-    background-color: rgba(0,0,0,0.1);
-    background: url(../images/icon-slides.png) no-repeat -83px 0;
-}
-.banner .banner-pre:hover{
-    background-color: rgba(0,0,0,0.5);
-}
-.banner .banner-next:hover{
-    background-color: rgba(0,0,0,0.5);
-}
-.banner .banner-next{
-    width: 41px;
-    height: 69px;
-    position: absolute;
-    right: 130px;
-    top: 42%;
-    z-index: 60;
-    border-radius: 18px;
-    cursor: pointer;
-    background-color: rgba(0,0,0,0.1);
-    background: url(../images/icon-slides.png) no-repeat -125px 0;
-}
-/* banner图下的原点列表编写 */
-.banner-list-round{
-    border-radius: 50%;
-    background: #666;
-    width: 9px;
-    height: 9px;
-}
-.banner-list-circle{
-    border-radius: 50%;
-    background:transparent;
-    height: 5px;
-    width: 5px;
-    border: 2px solid #e8340e;
-}
-.banner ol{
-    width:60px;
-    z-index: 60;
-    height: 10px;
-    line-height: 10px;
-    position:absolute;
-    top: 90%;
-    left: 50%;
-}
-.banner ol li{
-    float: left;
-    margin-right: 9px;
-}
-/* banner大图下方的以旧换新等六个图标 */
-.banner2-left{
-    width:240px;
-    height:180px;
-    display: flex;
-    float: left;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.banner2-left i{
-    width: 80px;
-    height: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-    font-size: 30px;
-    color: #c0c0bd;
-    background-color: #f4f3ef;
-    border-bottom: 1px solid #ebe5d7;
-    border-left: 1px solid #ebe5d7;
-    box-sizing: border-box;
-}
+#banner-wrap {
+  width: 100%;
+  height: 520px;
+  overflow: hidden; }
 
-.banner2-left i span{
-    font-size: 14px;
-    margin-top: 4px;
-}
+#banner-wrap .banner {
+  width: 100%;
+  height: 520px; }
+
+#banner-wrap .banner > ul {
+  width: 100%;
+  height: 520px;
+  overflow: hidden; }
+
+#banner-wrap .banner > ul > li {
+  width: 100%;
+  height: 520px;
+  overflow: hidden; }
+
+#banner-wrap .banner > ul > li > img {
+  width: 2260px;
+  height: 520px;
+  margin-left: -350px; }
+
+.banner .banner-pre {
+  width: 41px;
+  height: 69px;
+  position: absolute;
+  left: 420px;
+  top: 42%;
+  border-radius: 18px;
+  cursor: pointer;
+  z-index: 60;
+  background-color: rgba(0, 0, 0, 0.1);
+  background: url(../images/icon-slides.png) no-repeat -83px 0; }
+
+.banner .banner-pre:hover {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.banner .banner-next:hover {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.banner .banner-next {
+  width: 41px;
+  height: 69px;
+  position: absolute;
+  right: 130px;
+  top: 42%;
+  z-index: 60;
+  border-radius: 18px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  background: url(../images/icon-slides.png) no-repeat -125px 0; }
+
+/* banner图下的原点列表编写 */
+.banner-list-round {
+  border-radius: 50%;
+  background: #666;
+  width: 9px;
+  height: 9px; }
+
+.banner-list-circle {
+  border-radius: 50%;
+  background: transparent;
+  height: 5px;
+  width: 5px;
+  border: 2px solid #e8340e; }
+
+.banner ol {
+  width: 60px;
+  z-index: 60;
+  height: 10px;
+  line-height: 10px;
+  position: absolute;
+  top: 90%;
+  left: 50%; }
+
+.banner ol li {
+  float: left;
+  margin-right: 9px; }
+
+/* banner大图下方的以旧换新等六个图标 */
+.banner2-left {
+  width: 240px;
+  height: 180px;
+  display: flex;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.banner2-left i {
+  width: 80px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  color: #c0c0bd;
+  background-color: #f4f3ef;
+  border-bottom: 1px solid #ebe5d7;
+  border-left: 1px solid #ebe5d7;
+  box-sizing: border-box; }
+
+.banner2-left i span {
+  font-size: 14px;
+  margin-top: 4px; }
+
 /* banner图正下方三个图标 */
-.banner_2{
-    overflow: hidden;
-     width: 310px;
-    height: 180px;
-    display: block;
-    float: left;
-    margin-left: 10px;
-}
-.banner_3{
-    overflow: hidden;
-     width: 310px;
-    height: 180px;
-    display: block;
-    float: left;
-    margin-left: 10px;
-}
-.banner_4{
-    overflow: hidden;
-     width: 310px;
-    height: 180px;
-    display: block;
-    float: left;
-    margin-left: 10px;
-}
-.banner2-2{
-    width: 310px;
-    height: 180px;
-    transition: 2s;
-    transform-origin: center;
-    background:url(../images/banner2-2.jpg) no-repeat;
-    background-size: 100%;
-}
-.banner2-2:hover{
-    transform: scale(1.2,1.2);
-}
-.banner2-3:hover{
-    transform: scale(1.2,1.2);
-}
-.banner2-4:hover{
-    transform: scale(1.2,1.2);
-}
-.banner2-3{
-    width: 310px;
-    height: 180px;
-    transition: 2s;
-    transform-origin: center;
-    background:url(../images/banner2-3.jpg) no-repeat;
-    background-size: 100%;
-}
-.banner2-4{
-    width: 310px;
-    height: 180px;
-    transition: 2s;
-    transform-origin: center;
-    background:url(../images/banner2-4.jpg) no-repeat;
-    background-size: 100%;
-}
+.banner_2 {
+  overflow: hidden;
+  width: 310px;
+  height: 180px;
+  display: block;
+  float: left;
+  margin-left: 10px; }
+
+.banner_3 {
+  overflow: hidden;
+  width: 310px;
+  height: 180px;
+  display: block;
+  float: left;
+  margin-left: 10px; }
+
+.banner_4 {
+  overflow: hidden;
+  width: 310px;
+  height: 180px;
+  display: block;
+  float: left;
+  margin-left: 10px; }
+
+.banner2-2 {
+  width: 310px;
+  height: 180px;
+  transition: 2s;
+  transform-origin: center;
+  background: url(../images/banner2-2.jpg) no-repeat;
+  background-size: 100%; }
+
+.banner2-2:hover {
+  transform: scale(1.2, 1.2); }
+
+.banner2-3:hover {
+  transform: scale(1.2, 1.2); }
+
+.banner2-4:hover {
+  transform: scale(1.2, 1.2); }
+
+.banner2-3 {
+  width: 310px;
+  height: 180px;
+  transition: 2s;
+  transform-origin: center;
+  background: url(../images/banner2-3.jpg) no-repeat;
+  background-size: 100%; }
+
+.banner2-4 {
+  width: 310px;
+  height: 180px;
+  transition: 2s;
+  transform-origin: center;
+  background: url(../images/banner2-4.jpg) no-repeat;
+  background-size: 100%; }

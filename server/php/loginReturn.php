@@ -20,6 +20,6 @@ $result = $link -> query($sql);
 while ($res = $result -> fetch_assoc()){
     if ($res["tel"] == $tel&&$res["password"] == $password) {
         echo "<script>alert('登录成功') 
-        setTimeout(history.back(),3000)</script>";
+        setTimeout(history.back(http://localhost:7777/app/shop-mall.html),3000)</script>";
     }
 }

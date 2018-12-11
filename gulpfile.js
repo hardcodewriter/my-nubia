@@ -12,13 +12,17 @@ var concat = require('gulp-concat'),
 	connect = require('gulp-connect'),
 	flatten = require('gulp-flatten'),
 	rename = require('gulp-rename');
-
+	sass.compiler = require('node-sass');
 /**
  * 定义一个js文件夹加载任何文件夹的js的函数
  */
 var miniAnyJs = function (dir) {
 	gulp.src('app/static/js/' + dir + '/*.js')
 		.pipe(concat(dir + '.js'))        //合并
+		.on('error',function (err) {
+            console.log(err);
+            this.emit('end');
+        })
 		.pipe(babel({                    //es6 -> es5
 			presets: ['@babel/env']
 		}))
@@ -33,12 +37,15 @@ var miniAnyJs = function (dir) {
 		.pipe(gulp.dest('dist/app/static/js/'))  //输出到该文件夹下
 		.pipe(connect.reload());
 }
+//将scss变更为css样式
+
 /**
  * 定义一个css文件夹加载任何文件夹的css的函数
  */
 
 var miniAnyCss = function(dir) {
-	gulp.src('app/static/css/'+dir+'/*.css')
+	gulp.src('app/static/css/'+dir+'/*.*')
+		.pipe(sass().on('error', sass.logError))
 		.pipe(concat(dir+'.css'))
 		// .pipe(miniCss())
 		.on('error',function (err) {
@@ -55,14 +62,16 @@ var miniAnyCss = function(dir) {
 gulp.task("miniIndexJs", function () {
 	miniAnyJs('index');
 	miniAnyJs('login');
-	miniAnyJs('jquery');
+	miniAnyJs('register');
 	miniAnyJs('until');
 });
 //压缩合并index的css
 gulp.task("miniIndexCss", function () {
 	miniAnyCss('index');
 	miniAnyCss('login');
+	miniAnyCss("tel_register");
 	miniAnyCss('register');
+	miniAnyCss('blank_shopcar');
 	miniAnyCss('common');
 });
 //压缩html
