@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+=======
+body, html {
+  font-size: 0.12rem; }
+
+>>>>>>> aa5c2c1d00a067c900c8d4ef1bf5a20178bca7d8
 body, html, ul, li {
   padding: 0;
   margin: 0; }
@@ -30,7 +36,11 @@ i, em {
 .p i {
   position: relative;
   left: 1045px;
+<<<<<<< HEAD
   top: -37px;
+=======
+  top: -45px;
+>>>>>>> aa5c2c1d00a067c900c8d4ef1bf5a20178bca7d8
   color: #fff;
   font-size: 14px;
   display: inline-block; }
@@ -175,7 +185,11 @@ i, em {
   float: right;
   width: 120px;
   height: 65px;
+<<<<<<< HEAD
   top: -81px;
+=======
+  top: -86px;
+>>>>>>> aa5c2c1d00a067c900c8d4ef1bf5a20178bca7d8
   color: #fff;
   padding-left: 26px;
   box-sizing: border-box;

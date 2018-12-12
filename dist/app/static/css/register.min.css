@@ -20,6 +20,14 @@ body, html {
   position: relative;
   top: 15px; }
 
+<<<<<<< HEAD
+=======
+#contain .logo a {
+  width: 100%;
+  height: 100%;
+  display: block; }
+
+>>>>>>> aa5c2c1d00a067c900c8d4ef1bf5a20178bca7d8
 #contain .registerForm {
   width: 370px;
   margin: 0 auto;
@@ -166,14 +174,21 @@ input[type=submit] {
   display: inline-block; }
 
 @charset "UTF-8";
+<<<<<<< HEAD
 /* CSS Document */
 /*WEB重置*/
+=======
+>>>>>>> aa5c2c1d00a067c900c8d4ef1bf5a20178bca7d8
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, form, fieldset, legend, button, input, textarea, th, td {
   margin: 0;
   padding: 0; }
 
 body, html {
+<<<<<<< HEAD
   font: .16px "微软雅黑",Arial; }
+=======
+  font: 16px "微软雅黑",Arial; }
+>>>>>>> aa5c2c1d00a067c900c8d4ef1bf5a20178bca7d8
 
 a {
   text-decoration: none; }

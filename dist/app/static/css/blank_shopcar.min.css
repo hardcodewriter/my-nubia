@@ -1,0 +1,31 @@
+
+#main {
+  height: 320px;
+  width: 670px;
+  margin: 0 auto; }
+  #main .empty-left {
+    width: 270px;
+    height: 145px;
+    float: left;
+    margin-top: 100px; }
+    #main .empty-left .h1 {
+      width: 270px;
+      height: 72px;
+      color: #666;
+      margin-bottom: 18px;
+      font-size: 22px; }
+    #main .empty-left a {
+      width: 165px;
+      height: 35px;
+      display: block;
+      line-height: 35px;
+      text-align: center;
+      background: #e8380d;
+      border-radius: 25px;
+      color: #fff; }
+  #main .empty-right {
+    float: left;
+    margin: 50px 0 0 30px;
+    background: url(../images/empty_icon.jpg) no-repeat;
+    width: 274px;
+    height: 269px; }

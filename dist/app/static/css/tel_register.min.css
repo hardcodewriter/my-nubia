@@ -1,0 +1,234 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  font: 16px "微软雅黑",Arial; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+input {
+  outline: none; }
+
+.clearfix:after {
+  content: " ";
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+  display: block; }
+
+@charset "UTF-8";
+body, html {
+  background-color: #F5F5F5; }
+
+#contain {
+  width: 850px;
+  margin: 0 auto;
+  margin-top: 60px;
+  background: #fff;
+  padding-bottom: 40px;
+  margin-bottom: 40px; }
+
+#contain .logo {
+  background: url(../images/nubia-logo.png) no-repeat;
+  background-position: 0 -55px;
+  width: 156px;
+  height: 55px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+  top: 15px; }
+
+#contain .logintype {
+  cursor: pointer;
+  font-size: 16px;
+  width: 240px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px; }
+
+#contain .logintype .zhanghaodenglu {
+  color: #000; }
+
+#contain .logintype .shoujidenglu {
+  color: #e8380d; }
+
+#contain .registerForm {
+  width: 370px;
+  margin: 0 auto;
+  position: relative; }
+
+.telphonecheck {
+  line-height: 20px;
+  height: 20px;
+  color: #F00;
+  width: 120px;
+  font-size: 12px;
+  position: absolute;
+  top: 18px;
+  left: 368px; }
+
+input[name=yanzhengma] {
+  width: 223px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  border: 1px solid #e0e4e7;
+  vertical-align: middle;
+  font-size: 12px;
+  margin-bottom: 20px; }
+
+#contain .yanzengimg {
+  height: 48px;
+  width: 120px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.phone_yanzhengma {
+  position: relative; }
+
+input[name=telphone] {
+  width: 348px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  border: 1px solid #e0e4e7;
+  vertical-align: middle;
+  font-size: 12px;
+  margin-bottom: 20px; }
+
+input[name=get_yanzhengma] {
+  position: absolute;
+  width: 100px;
+  height: 51px;
+  line-height: 50px;
+  border: 1px solid #e0e4e7;
+  font-size: 12px;
+  text-align: center;
+  top: 0;
+  right: 10px;
+  cursor: pointer;
+  background-color: #fff; }
+
+input[name=passyanzhengma] {
+  width: 348px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  border: 1px solid #e0e4e7;
+  vertical-align: middle;
+  font-size: 12px;
+  margin-bottom: 20px; }
+
+input[type=submit] {
+  width: 360px;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  background: #e8380d;
+  color: #fff;
+  border: none;
+  cursor: pointer; }
+
+.login {
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  margin-left: 205px; }
+
+.login a {
+  color: #e8380d; }
+
+.login .login2 {
+  font-size: 18px;
+  padding: 0 7px;
+  color: #d5d5d5; }
+
+.login .login3 {
+  color: #34383d; }
+
+.thirdlogin {
+  margin-top: 20px;
+  margin-bottom: 30px; }
+
+.thirdlogin span {
+  line-height: 28px;
+  height: 28px;
+  font-size: 14px;
+  color: #666;
+  float: left; }
+
+.thirdlogin .thirdlogin_weixin {
+  background: url(../images/third_login.png) no-repeat -59px -1px;
+  width: 28px;
+  height: 28px;
+  display: block;
+  float: left;
+  margin-left: 10px; }
+
+.thirdlogin .thirdlogin_weixin:hover {
+  background: url(../images/third_login.png) no-repeat -59px -30px; }
+
+.thirdlogin .thirdlogin_zhufubao {
+  background: url(../images/third_login.png) no-repeat -88px -1px;
+  width: 28px;
+  height: 28px;
+  display: block;
+  float: left;
+  margin-left: 10px; }
+
+.thirdlogin .thirdlogin_zhufubao:hover {
+  background: url(../images/third_login.png) no-repeat -88px -30px; }
+
+.thirdlogin .thirdlogin_weibo {
+  background: url(../images/third_login.png) no-repeat -30px -1px;
+  width: 28px;
+  height: 28px;
+  display: block;
+  float: left;
+  margin-left: 10px; }
+
+.thirdlogin .thirdlogin_weibo:hover {
+  background: url(../images/third_login.png) no-repeat -30px -30px; }
+
+.thirdlogin .thirdlogin_qq {
+  background: url(../images/third_login.png) no-repeat -1px -1px;
+  width: 28px;
+  height: 28px;
+  display: block;
+  float: left;
+  margin-left: 10px; }
+
+.thirdlogin .thirdlogin_qq:hover {
+  background: url(../images/third_login.png) no-repeat -1px -30px; }
+
+/*footer栏编写*/
+#footer p {
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  color: #ccc;
+  font-size: 12px; }
+
+#footer p span {
+  background: url(../images/govIcon.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  background-size: 100%;
+  vertical-align: middle;
+  display: inline-block; }

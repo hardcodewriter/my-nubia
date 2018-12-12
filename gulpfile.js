@@ -12,7 +12,7 @@ var concat = require('gulp-concat'),
 	connect = require('gulp-connect'),
 	flatten = require('gulp-flatten'),
 	rename = require('gulp-rename');
-    sass.compiler = require('node-sass')
+	sass.compiler = require('node-sass');
 /**
  * 定义一个js文件夹加载任何文件夹的js的函数
  */
@@ -63,6 +63,7 @@ gulp.task("miniIndexJs", function () {
 	miniAnyJs('index');
 	miniAnyJs('login');
 	miniAnyJs('register');
+	miniAnyJs("shop-car");
 	miniAnyJs('until');
 	miniAnyJs('nubiaX');
 });
@@ -72,6 +73,7 @@ gulp.task("miniIndexCss", function () {
 	miniAnyCss('login');
 	miniAnyCss("tel_register");
 	miniAnyCss('register');
+	miniAnyCss("shop-car");
 	miniAnyCss('blank_shopcar');
 	miniAnyCss('common');
 	miniAnyCss('nubiaX');

@@ -14,7 +14,7 @@ var loginCheck = (function() {
 			for(let i=1;i<2;i++) {
 				$inps[i].onblur = function(e) {
 					// console.log($inps[0].value,$inps[1].value)
-					loginAjax("../server/php/login.php", {
+					loginAjax("http://localhost:1234/php/my-nubia/server/php/login.php", {
 						data: {
 							"telphone": $inps[0].value,
 							"password": $inps[1].value
@@ -22,7 +22,7 @@ var loginCheck = (function() {
 					})
 						.then(res => {	
 							$span.innerHTML = "";
-							console.log("没毛病吧？")
+							
 							self.success($inps[0]);
 						})
 						.catch(res => {
