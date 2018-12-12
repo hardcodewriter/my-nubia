@@ -22,7 +22,7 @@ var loginCheck = (function() {
 					})
 						.then(res => {	
 							$span.innerHTML = "";
-							
+							// document.cookie=`$inps[0].value`;
 							self.success($inps[0]);
 						})
 						.catch(res => {

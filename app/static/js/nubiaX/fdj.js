@@ -3,6 +3,8 @@ var glass=(function(){
         init(x){
            this.Multiple=x||2
            this.$Box=document.querySelector('.Box');
+           this.$main=document.querySelector("#main");
+           this.$main_left=document.querySelector(".main_left");
            this.$showImage=this.$Box.querySelector('.show-image');
            this.$showBigImage=this.$Box.querySelector('.show-big-image');
            this.$box=document.querySelector('.box')
@@ -56,10 +58,10 @@ var glass=(function(){
                     this.$showImage.onmousemove = function (ev) {
                         ev = ev || window.event;
                         // 计算小方块定点坐标
-                        var x = ev.pageX  - _this.$filter.offsetWidth/2-80;
+                        var x = ev.pageX  - _this.$filter.offsetWidth/2-_this.$main.offsetLeft;
                         var y = ev.pageY -_this.$filter.offsetHeight/2-115;
                         console.log(x);
-                        console.log(y);
+                        console.log(_this.$main_left.offsetLeft,_this.$main_left.offsetLeft);
                         // 获取小方块移动的最大坐标
                         var maxL = this.clientWidth - _this.$filter.offsetWidth,
                             maxT = this.clientHeight - _this.$filter.offsetHeight;
