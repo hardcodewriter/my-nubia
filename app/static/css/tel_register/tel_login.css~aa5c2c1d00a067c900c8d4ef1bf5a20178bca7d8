@@ -19,11 +19,6 @@ body,html{
     position: relative;
     top: 15px;
 }
-#contain .logo a{
-    width:100%;
-    height: 100%;
-    display: block;
-}
 #contain .logintype{
     cursor: pointer;
     font-size: 16px;
@@ -33,36 +28,48 @@ body,html{
     margin-bottom: 20px;
 }
 #contain .logintype .zhanghaodenglu{
-     color: #e8380d;
+    color: #000;
 }
 #contain .logintype .shoujidenglu{
-    color: #000;
+    color: #e8380d;
 }
 #contain .registerForm{
 	width: 370px;
 	margin:0 auto;
-    position: relative;  
+	position: relative;
 }
 .telphonecheck{
-	line-height: 20px;
-    height: 20px;
-    color: #F00;
-    width: 130px;
-    font-size: 12px;
-	position: absolute;	
-	top: 6px;
-	left: 368px;
-}
-.passwordcheck{
 	line-height: 20px;
     height: 20px;
     color: #F00;
     width: 120px;
     font-size: 12px;
 	position: absolute;	
-	top: 88px;
+	top: 18px;
 	left: 368px;
 }
+input[name=yanzhengma]{
+	width: 223px;
+	height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    border: 1px solid #e0e4e7;
+    vertical-align: middle;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+#contain .yanzengimg{
+    height: 48px;
+    width: 120px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.phone_yanzhengma{
+	position:relative;
+}
+
 input[name=telphone]{
 	width: 348px;
     height: 50px;
@@ -73,11 +80,25 @@ input[name=telphone]{
     font-size: 12px;
     margin-bottom: 20px;
 }
-input[name=password]{
+input[name=get_yanzhengma]{
+	position: absolute;
+	width: 100px;
+    height: 51px;
+    line-height: 50px;
+    border: 1px solid #e0e4e7;
+    font-size: 12px;
+   	text-align: center;
+   	top: 0;
+   	right:10px;
+   	cursor: pointer;
+   	background-color: #fff;
+}
+input[name=passyanzhengma]{
 	width: 348px;
     height: 50px;
     line-height: 50px;
     padding-left: 10px;
+    
     border: 1px solid #e0e4e7;
     vertical-align: middle;
     font-size: 12px;

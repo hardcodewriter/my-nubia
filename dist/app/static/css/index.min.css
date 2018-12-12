@@ -1,6 +1,4 @@
 @charset "UTF-8";
-<<<<<<< HEAD
-=======
 #main {
   width: 1200px;
   height: 100%;
@@ -518,7 +516,6 @@
   padding-right: 10px; }
 
 @charset "UTF-8";
->>>>>>> aa5c2c1d00a067c900c8d4ef1bf5a20178bca7d8
 .content {
   width: 1200px;
   margin: 0 auto; }
@@ -548,13 +545,9 @@
   background-color: #f7f7f7; }
 
 #banner2-wrap {
-<<<<<<< HEAD
+  height: 180px;
   margin-top: 10px;
   height: 180px; }
-=======
-  height: 180px;
-  margin-top: 10px; }
->>>>>>> aa5c2c1d00a067c900c8d4ef1bf5a20178bca7d8
 
 .banner2-left {
   width: 180px;

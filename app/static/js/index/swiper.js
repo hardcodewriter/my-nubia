@@ -50,15 +50,6 @@ var swiper = (function () {
     }
 }())
 swiper.init($('.box'));
-<<<<<<< HEAD
-function headerReady() {
-    swiper.init();
-}
-$("#header-wrap").load("common.html #wrapper", function () {
-    headerReady();
-});
-$("#footer-wrap").load("common.html #footer");
-=======
 //引入header标签
 function headerReady() {
     swiper.init();
@@ -67,7 +58,3 @@ function headerReady() {
     headerReady();
   });
   $("#footer-wrap").load("common.html #footer");
-
-
-
->>>>>>> aa5c2c1d00a067c900c8d4ef1bf5a20178bca7d8
