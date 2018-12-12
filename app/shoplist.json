@@ -1,0 +1,20 @@
+[
+    {
+        "id":1,
+        "name":"nubiaX 深空灰 8GB+128GB",
+        "price":"￥3299",
+        "src":"static/images/images01_small.jpg"
+    },
+    {
+        "id":1,
+        "name":"nubiaX 海光兰 8GB+128GB",
+        "price":"￥3299",
+        "src":"static/images/images05_small.jpg"
+    },
+    {
+        "id":1,
+        "name":"nubiaX 星空典藏版 8GB+128GB",
+        "price":"￥3299",
+        "src":"static/images/images09_small.jpg"
+    }
+]
