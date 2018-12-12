@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_953003_z4kee99r3ha.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_953003_1qjwx2d9z2x.css">
     <link rel="stylesheet" href="static/css/common.min.css">
     <link rel="stylesheet" href="static/css/nubiaX.min.css">
 </head>
@@ -52,9 +52,9 @@
                     1、选择颜色
                 </p>
                 <ul id="selector">
-                    <li><a href="" class="select">深空灰</a></li>
-                    <li><a href="">海光蓝</a></li>
-                    <li><a href="">星空典藏版</a></li>
+                    <li><a href="javascript:;">深空灰</a></li>
+                    <li><a href="javascript:;">海光蓝</a></li>
+                    <li><a href="javascript:;">星空典藏版</a></li>
                 </ul>
         </div>
         <div class="phone_net">
@@ -84,6 +84,7 @@
           <img src="static/images/banner2.jpg">
           <img src="static/images/banner3.jpg">
           <img src="static/images/banner4.jpg">
+          <img src="static/images/banner7.jpg">
       </div>
     
 
@@ -94,7 +95,52 @@
     <script>
             glass.init(2)
     </script>
-    
+    <script>
+    //    $('#selector').on('click','li',function(){
+    //        $(this).siblings().children('a').css('color','#000');
+    //        $(this).children().css('color','#e83100');
+    //        $('.show-image').attr('src','static/images/images05_big.png')
+    //    })
+    $('#selector').children().eq(0).click(function(){
+        $(this).siblings().children('a').css('color','#000');
+        $(this).children().css('color','#e83100');
+        $('.show-image').children().attr('src','static/images/images02_big.png');
+        $('.show-big-image').children().attr('src','static/images/images02_largest.png');
+        $('.img-box').children().children().children().eq(0).attr('src','static/images/images02_small.png');
+        $('.img-box').children().children().children().eq(1).attr('src','static/images/images01_small.png');
+        $('.img-box').children().children().children().eq(2).attr('src','static/images/images03_small.png');
+        $('.img-box').children().children().children().eq(3).attr('src','static/images/images04_small.png');
+        $('.price').html('￥ 3299');
+        
+    })
+       $('#selector').children().eq(2).click(function(){
+        $(this).siblings().children('a').css('color','#000');
+        $(this).children().css('color','#e83100');
+        $('.show-image').children().attr('src','static/images/images05_big.png');
+        $('.show-big-image').children().attr('src','static/images/images05_largest.png');
+        // let index=0,a=5;
+        // for(let i=0;i<3;i++){
+
+        // }
+        $('.img-box').children().children().children().eq(0).attr('src','static/images/images05_small.png');
+        $('.img-box').children().children().children().eq(1).attr('src','static/images/images06_small.png');
+        $('.img-box').children().children().children().eq(2).attr('src','static/images/images07_small.png');
+        $('.img-box').children().children().children().eq(3).attr('src','static/images/images08_small.png');
+        $('.price').html('￥ 5299');
+       })
+
+       $('#selector').children().eq(1).click(function(){
+        $(this).siblings().children('a').css('color','#000');
+        $(this).children().css('color','#e83100');
+        $('.show-image').children().attr('src','static/images/images09_big.png');
+        $('.show-big-image').children().attr('src','static/images/images09_largest.png');
+        $('.img-box').children().children().children().eq(0).attr('src','static/images/images09_small.png');
+        $('.img-box').children().children().children().eq(1).attr('src','static/images/images10_small.png');
+        $('.img-box').children().children().children().eq(2).attr('src','static/images/images11_small.png');
+        $('.img-box').children().children().children().eq(3).attr('src','static/images/images12_small.png');
+        $('.price').html('￥ 3799');
+       })
+    </script>
 </body>
 
 </html>

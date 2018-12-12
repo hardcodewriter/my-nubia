@@ -175,7 +175,8 @@ input {
 #selector > li a {
   display: block;
   width: 275px;
-  height: 66px; }
+  height: 66px;
+  color: #000; }
 
 #selector li .select {
   color: #e83100; }
@@ -225,9 +226,9 @@ input {
 
 #img {
   width: 100%;
-  height: 1942px; }
+  height: 2427px; }
 
 #img img {
   display: block;
   width: 100%;
-  height: 25%; }
+  height: 20%; }

@@ -7,6 +7,8 @@ var glass=(function(){
            this.$showBigImage=this.$Box.querySelector('.show-big-image');
            this.$box=document.querySelector('.box')
            this.$ulbox = this.$box.querySelector('.img-box');
+           this.$main=document.querySelector("#main");
+           this.$main_left=document.querySelector(".main_left");
            // 获取每一张图片的li集合
            this.$liAll = this.$ulbox.children;
            // 获取移动的小黑块(放大镜)
@@ -56,10 +58,10 @@ var glass=(function(){
                     this.$showImage.onmousemove = function (ev) {
                         ev = ev || window.event;
                         // 计算小方块定点坐标
-                        var x = ev.pageX  - _this.$filter.offsetWidth/2-80;
+                        var x = ev.pageX  - _this.$filter.offsetWidth/2-_this.$main_left.offsetLeft;
                         var y = ev.pageY -_this.$filter.offsetHeight/2-115;
-                        console.log(x);
-                        console.log(y);
+                        // console.log(x);
+                        // console.log(y);
                         // 获取小方块移动的最大坐标
                         var maxL = this.clientWidth - _this.$filter.offsetWidth,
                             maxT = this.clientHeight - _this.$filter.offsetHeight;
