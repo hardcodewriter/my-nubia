@@ -1,0 +1,233 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  font: 16px "微软雅黑",Arial; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: normal; }
+
+i, em {
+  font-style: normal; }
+
+input {
+  outline: none; }
+
+.clearfix:after {
+  content: " ";
+  height: 0;
+  overflow: hidden;
+  clear: both;
+  visibility: hidden;
+  display: block; }
+
+#main {
+  margin: 0 auto;
+  width: 1200px;
+  overflow: hidden; }
+
+/* 左边图片部分开始 */
+.main_left {
+  float: left;
+  width: 565px;
+  height: 730px;
+  text-align: center;
+  margin-top: 50px; }
+
+.Box {
+  position: relative; }
+
+.Box .show-image {
+  position: relative;
+  width: 565px;
+  height: 565px;
+  overflow: hidden; }
+
+.show-image img {
+  max-width: 100%;
+  max-height: 100%; }
+
+.filter {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  cursor: move;
+  display: none; }
+
+.main_left .box {
+  float: left;
+  width: 565px;
+  height: 85px; }
+
+.main_left .box ul {
+  width: 384px;
+  height: 85px;
+  margin: 0 auto; }
+
+.show-big-image {
+  position: absolute;
+  left: 580px;
+  top: 20px;
+  width: 450px;
+  height: 450px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  display: none; }
+
+.show-big-image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1130px; }
+
+.main_left .box ul li {
+  float: left;
+  box-sizing: border-box;
+  margin-left: 11px;
+  width: 84px;
+  height: 84px;
+  border: 1px #e9e9e9 solid;
+  cursor: pointer; }
+
+.main_left .box a {
+  display: block;
+  width: 84px;
+  height: 84px; }
+
+.box ul li img {
+  width: 84px;
+  height: 84px; }
+
+.main_left .box .select {
+  border-color: #e83100; }
+
+/* 右边数据部分开始 */
+.main_right {
+  width: 605px;
+  height: 730px;
+  float: right; }
+
+.main_right_p {
+  margin-top: 85px;
+  margin-left: 38px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #D7D7D7; }
+
+.main_right_p a {
+  color: #D7D7D7; }
+
+.main_right_p a:hover {
+  color: #000; }
+
+.sellPoint {
+  margin-left: 50px;
+  margin-top: 10px; }
+
+.phone_net {
+  margin-left: 36px;
+  width: 605px; }
+
+.phone_net a {
+  color: #424542;
+  font-size: 18px; }
+
+.phone_net_p {
+  font-size: 20px;
+  color: #424542;
+  width: 569px;
+  height: 30px;
+  margin-top: 50px; }
+
+#selector {
+  margin-top: 22px;
+  width: 605px;
+  height: 150px; }
+
+#selector > li {
+  float: left;
+  width: 273px;
+  height: 66px;
+  border: 1px solid #D7D7D7;
+  text-align: center;
+  line-height: 66px; }
+
+#selector li:nth-child(1) {
+  margin-right: 18px;
+  margin-bottom: 15px; }
+
+#selector li:nth-child(2) {
+  margin-bottom: 15px; }
+
+#selector li:nth-child(3) {
+  margin-right: 18px; }
+
+#selector > li a {
+  display: block;
+  width: 275px;
+  height: 66px; }
+
+#selector li .select {
+  color: #e83100; }
+
+.price {
+  color: #e83100;
+  font-size: 20px; }
+
+.main_right button {
+  background-color: #e83100;
+  border: none;
+  color: #fff;
+  width: 130px;
+  height: 30px;
+  border-radius: 4px;
+  margin-left: 36px;
+  margin-top: 20px;
+  cursor: pointer; }
+
+/* 商品详情 */
+#details-tab {
+  border-top: 1px solid #eee;
+  height: 60px;
+  width: 100%;
+  margin-top: 30px; }
+
+.details {
+  width: 1200px;
+  height: 60px;
+  margin: 0 auto; }
+
+.details ul {
+  width: 1200px;
+  float: left; }
+
+.details ul li {
+  float: left;
+  line-height: 60px;
+  text-align: center; }
+
+.details ul li:nth-child(2) {
+  padding: 0 50px; }
+
+.details a {
+  color: #000;
+  font-size: 18px; }
+
+#img {
+  width: 100%;
+  height: 1942px; }
+
+#img img {
+  display: block;
+  width: 100%;
+  height: 25%; }

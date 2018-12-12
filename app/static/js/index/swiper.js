@@ -47,11 +47,6 @@ var swiper = (function () {
             })
 
         }
-        // showImage(index=0){
-        //    if(index<0){
-        //       this.$list.css('left',-showWidth);
-        //    }
-        // }
     }
 }())
 swiper.init($('.box'));
@@ -63,6 +58,3 @@ function headerReady() {
     headerReady();
   });
   $("#footer-wrap").load("common.html #footer");
-
-
-

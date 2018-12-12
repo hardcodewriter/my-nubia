@@ -65,6 +65,7 @@ gulp.task("miniIndexJs", function () {
 	miniAnyJs('register');
 	miniAnyJs("shop-car");
 	miniAnyJs('until');
+	miniAnyJs('nubiaX');
 });
 //压缩合并index的css
 gulp.task("miniIndexCss", function () {
@@ -75,6 +76,7 @@ gulp.task("miniIndexCss", function () {
 	miniAnyCss("shop-car");
 	miniAnyCss('blank_shopcar');
 	miniAnyCss('common');
+	miniAnyCss('nubiaX');
 });
 //压缩html
 gulp.task('miniHtml', function () {
