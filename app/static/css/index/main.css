@@ -1,0 +1,595 @@
+/* 通用 */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+#main {
+    width: 1200px;
+    height: 100%;
+    /* background: #888888; */
+    margin: 0 auto;
+}
+
+/* 热门 */
+
+/* 头部样式*/
+
+.remen-top {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.remen-top p:nth-child(1) {
+    font-size: 22px;
+    color: #7e7e7e;
+}
+.remen-top p a {
+    font-size: 12px;
+    color: #ee6d52;
+}
+#main .remen .remen-top p:hover a {
+    color: #ea412a;
+}
+
+/* 商品样式 */
+
+.remen-bottom {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 25px;
+}
+.remen-bottom li {
+    width: 290px;
+    height: 450px;
+    float: left;
+    background: #f4f3ef;
+    /* background: #000; */
+}
+.remen-bottom li {
+    display: inline-block;
+    position: relative;
+}
+
+.remen-bottom li .remen-bottom-a {
+    position: absolute;
+    background: #f4f3ef;
+    top: 50px;
+    transition: linear 0.3s;
+    width: 290px;
+    height: 300px;
+}
+.remen-bottom li img {
+    width: 290px;
+    height: 248px;
+}
+.remen-bottom li .remen-bottom-a div .p1 {
+    color: #292228;
+}
+.remen-bottom li .remen-bottom-a div p {
+    height: 20px;
+    width: 290px;
+    text-align: center;
+    font-size: 12px;
+    color: #ff6462;
+}
+.remen-bottom li .remen-bottom-a:hover {
+    margin-top: -15px;
+}
+
+/* 价格 详情 切换 */
+
+.remen-bottom li .jiage {
+    position: absolute;
+    top: 365px;
+}
+.remen-bottom li .jiage p {
+    height: 85px;
+    width: 290px;
+    text-align: center;
+    color: #f35c49;
+    /* background: red; */
+}
+.remen-bottom li .goumai {
+    display: none;
+    position: absolute;
+    top: 365px;
+    height: 85px;
+    width: 290px;
+    /* background: green; */
+}
+.remen-bottom li .goumai div {
+    float: left;
+    width: 105px;
+    height: 35px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.remen-bottom li .goumai div a {
+    font-size: 12px;
+    text-align: center;
+    line-height: 35px;
+    color: #f35c49
+}
+.remen-bottom li .goumai div:nth-child(2) a {
+    color: white;
+}
+
+.remen-bottom li .goumai div:nth-child(2) :hover {
+    background: #ea412a;
+    border-radius: 20px;
+}
+.remen-bottom li .goumai div:nth-child(1) :hover {
+    background: #fafad2;
+    border-radius: 20px;
+}
+/* 精品*/
+
+/* 头部样式*/
+
+.jingpin-top {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jingpin-top p:nth-child(1) {
+    font-size: 22px;
+    color: #7e7e7e;
+}
+.jingpin-top p a {
+    font-size: 12px;
+    color: #ee6d52;
+}
+#main .jingpin .jingpin-top p:hover a {
+    color: #ea412a;
+}
+
+/* 商品样式 */
+
+.jingpin-bottom {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 25px;
+}
+.jingpin-bottom li {
+    width: 290px;
+    height: 450px;
+    float: left;
+    background: #f4f3ef;
+    /* background: #000; */
+}
+.jingpin-bottom li {
+    display: inline-block;
+    position: relative;
+}
+
+.jingpin-bottom li .jingpin-bottom-a {
+    position: absolute;
+    background: #f4f3ef;
+    top: 50px;
+    transition: linear 0.3s;
+    width: 290px;
+    height: 300px;
+}
+.jingpin-bottom li img {
+    width: 290px;
+    height: 248px;
+}
+.jingpin-bottom li .jingpin-bottom-a div .p1 {
+    color: #292228;
+}
+.jingpin-bottom li .jingpin-bottom-a div p {
+    height: 20px;
+    width: 290px;
+    text-align: center;
+    font-size: 12px;
+    color: #ff6462;
+}
+.jingpin-bottom li .jingpin-bottom-a:hover {
+    margin-top: -15px;
+}
+
+/* 价格 详情 切换 */
+
+.jingpin-bottom li .jiage {
+    position: absolute;
+    top: 365px;
+}
+.jingpin-bottom li .jiage p {
+    height: 85px;
+    width: 290px;
+    text-align: center;
+    color: #f35c49;
+    /* background: red; */
+}
+.jingpin-bottom li .goumai {
+    display: none;
+    position: absolute;
+    top: 365px;
+    height: 85px;
+    width: 290px;
+    /* background: green; */
+}
+.jingpin-bottom li .goumai div {
+    float: left;
+    width: 105px;
+    height: 35px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.jingpin-bottom li .goumai div a {
+    font-size: 12px;
+    text-align: center;
+    line-height: 35px;
+    color: #f35c49
+}
+.jingpin-bottom li .goumai div:nth-child(2) a {
+    color: white;
+}
+
+.jingpin-bottom li .goumai div:nth-child(2) :hover {
+    background: #ea412a;
+    border-radius: 20px;
+}
+.jingpin-bottom li .goumai div:nth-child(1) :hover {
+    background: #fafad2;
+    border-radius: 20px;
+}-top {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jingpin-top p:nth-child(1) {
+    font-size: 22px;
+    color: #7e7e7e;
+}
+
+.jingpin-top p a {
+    font-size: 12px;
+    color: #ee6d52;
+}
+
+#main .jingpin .jingpin-top p:hover a {
+    color: #ea412a;
+}
+
+/* 精选配件 */
+
+/* 头部样式*/
+
+.jingxuan{
+    height: 1000px;
+    width: 1200px;
+    margin-bottom: 10px;
+}
+
+.jingxuan-top {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jingxuan-top p:nth-child(1) {
+    font-size: 22px;
+    color: #7e7e7e;
+}
+.jingxuan-top p a {
+    font-size: 12px;
+    color: #ee6d52;
+}
+#main .jingxuan .jingxuan-top p:hover a {
+    color: #ea412a;
+}
+/* 商品样式 */
+
+.jingxuan-bottom {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 15px;
+}
+.jingxuan-bottom li {
+    width: 290px;
+    height: 450px;
+    float: left;
+    background: #f4f3ef;
+    /* background: #000; */
+    display: inline-block;
+    position: relative;
+}
+
+.jingxuan-bottom li .jingxuan-bottom-a {
+    position: absolute;
+    background: #f4f3ef;
+    top: 50px;
+    transition: linear 0.3s;
+    width: 290px;
+    height: 300px;
+}
+.jingxuan-bottom li img {
+    width: 290px;
+    height: 248px;
+}
+.jingxuan-bottom li .jingxuan-bottom-a div .p1 {
+    color: #292228;
+}
+.jingxuan-bottom li .jingxuan-bottom-a div p {
+    height: 20px;
+    width: 290px;
+    text-align: center;
+    font-size: 12px;
+    color: #ff6462;
+}
+.jingxuan-bottom li .jingxuan-bottom-a:hover {
+    margin-top: -15px;
+}
+
+/* 价格 详情 切换 */
+
+.jingxuan-bottom li .jiage {
+    position: absolute;
+    top: 365px;
+}
+.jingxuan-bottom li .jiage p {
+    height: 85px;
+    width: 290px;
+    text-align: center;
+    color: #f35c49;
+    /* background: red; */
+}
+.jingxuan-bottom li .goumai {
+    display: none;
+    position: absolute;
+    top: 365px;
+    height: 85px;
+    width: 290px;
+    /* background: green; */
+}
+.jingxuan-bottom li .goumai div {
+    float: left;
+    width: 105px;
+    height: 35px;
+    margin: 20px;
+    border-radius: 20px;
+}
+.jingxuan-bottom li .goumai div a {
+    font-size: 12px;
+    text-align: center;
+    line-height: 35px;
+    color: #f35c49
+}
+.jingxuan-bottom li .goumai div:nth-child(2) a {
+    color: white;
+}
+
+.jingxuan-bottom li .goumai div:nth-child(2) :hover {
+    background: #ea412a;
+    border-radius: 20px;
+}
+.jingxuan-bottom li .goumai div:nth-child(1) :hover {
+    background: #fafad2;
+    border-radius: 20px;
+}
+/* 精选big图 */
+
+.jingxuan-bottom #jingxuan-big {
+    width: 594px;
+    height: 450px;
+    /* float: left; */
+    background: #f4f3ef;
+    /* background: #000; */
+    display: inline-block;
+    position: relative;
+}
+#jingxuan-big .jingxuan-big-a {
+    position: absolute;
+    /* background: #f4f3ef; */
+    top: 0;
+    width: 594px;
+    height: 450px;
+}
+#jingxuan-big img {
+    width: 594px;
+    height: 450px;
+}
+
+/* 尾部内容 */
+
+.zrb-foot{
+    margin: 0 auto;
+    padding-top:30px;
+    width: 1200px;
+    height: 870px;
+    background: #f4f3ef;
+}
+/* 头部样式*/
+.zrb-foot-top {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.zrb-foot-top p:nth-child(1) {
+    font-size: 22px;
+    color: #7e7e7e;
+}
+.zrb-foot-top p a {
+    font-size: 12px;
+    color: #ee6d52;
+}
+.zrb-foot .zrb-foot-top p:hover a {
+    color: #ea412a;
+}
+
+/* 视频 */
+
+.zrb-shipin{
+    width: 1200px;
+    height: 335px;
+}
+.zrb-shipin li{
+    float: left;
+    width: 290px;
+    height: 335px;
+    background:white;
+    position: relative
+}
+.zrb-shipin li a img{
+    width: 290px;
+    height: 200px;
+}
+.zrb-shipin li p:nth-child(2) {
+    margin-top: 28px;
+    text-align: center;
+    width: 290px;
+    font-size: 20px;
+}
+.zrb-shipin li p:nth-child(3) {
+    margin-top: 20px;
+    text-align: center;
+    width: 290px;
+    color: #9999a6;
+    font-size: 16px;
+}
+.zrb-sanjiaoxing{
+    background: white;
+    opacity:0.5;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    top: 70px;
+    left: 115px;
+}
+.zrb-shipin li span {
+    position: absolute;
+    top: 96px;
+    left: 136px;
+    height: 10px;
+    width: 10px;
+    /* opacity:0.9; */
+    color: white;
+    text-align: center;
+    line-height: 10px;
+    font-size:20px;
+}
+.zrb-bofang-a:hover div{
+    background: red;
+}
+.zrb-bofang-a{
+    top:0;
+    position: absolute;
+    width: 290px;
+    height: 200px;
+}
+.fuwu1{
+    width: 1200px;
+    height: 170px;
+    /* background: #cccccc; */
+    margin-bottom: 15px;
+}
+.fuwu1 li{
+    float: left;
+    width: 590px;
+    height: 170px;
+    background: white;
+}
+.fuwu1 div div{
+    font-size: 80px;
+    color: #7e7e7e;
+    width: 160px;
+    height: 170px;
+    text-align: center;
+    line-height: 170px;
+    margin-left: 20px;
+    float: left;
+}
+.fuwu1 li .zrb-wenzi{
+    margin-left: 20px;
+    float: left;
+    width: 360px;
+    height: 170px;
+}
+.fuwu1 li .zrb-wenzi .p1{
+    margin-top: 38px;
+    text-align:left;
+    font-size: 18px;
+    color: #292228;
+}
+.fuwu1 li .zrb-wenzi .p2 {
+    margin-top: 5px;
+    text-align: left;
+    font-size: 15px;
+    color: #7e7e7e;
+}
+.zrb-qita{
+    width: 1200px;
+    height: 120px;
+    display:flex;
+    justify-content: space-around;
+}
+.zrb-qita a{
+    flex: 1;
+    background: white;
+}
+.zrb-qita li p{
+    height: 120px;
+    float: right;
+    font-size: 33px;
+    text-align: right;
+    line-height: 120px;
+    color: #cccccc;
+}
+.zrb-qita li {
+    text-align: center;
+    line-height: 120px;
+    height: 120px;
+    color: #7e7e7e;
+}
+.zrb-qita a li span{
+    font-size: 50px;
+    padding-right:10px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
