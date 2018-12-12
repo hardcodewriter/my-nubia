@@ -3,6 +3,8 @@ var glass=(function(){
         init(x){
            this.Multiple=x||2
            this.$Box=document.querySelector('.Box');
+           this.$main=document.querySelector("#main");
+           this.$main_left=document.querySelector(".main_left");
            this.$showImage=this.$Box.querySelector('.show-image');
            this.$showBigImage=this.$Box.querySelector('.show-big-image');
            this.$box=document.querySelector('.box')

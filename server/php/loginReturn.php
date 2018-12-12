@@ -20,8 +20,9 @@ $result = $link -> query($sql);
 
 while ($res = $result -> fetch_assoc()){
     if ($res["tel"] == $tel&&$res["password"] == $password) {
-        echo "<script> 
+        echo "<script>  
         location.assign('http://localhost:7777/app/shop-mall.html');
+        document.cookie=`$tel`;
         </script>";
     }else{
         echo "cao";
