@@ -31,7 +31,8 @@ input {
 
 #main {
   margin: 0 auto;
-  width: 1200px; }
+  width: 1200px;
+  overflow: hidden; }
 
 /* 左边图片部分开始 */
 .main_left {
@@ -115,8 +116,7 @@ input {
 .main_right {
   width: 605px;
   height: 730px;
-  float: right;
-  margin-right: 80px; }
+  float: right; }
 
 .main_right_p {
   margin-top: 85px;
@@ -177,6 +177,9 @@ input {
   width: 275px;
   height: 66px; }
 
+#selector li .select {
+  color: #e83100; }
+
 .price {
   color: #e83100;
   font-size: 20px; }
@@ -196,7 +199,8 @@ input {
 #details-tab {
   border-top: 1px solid #eee;
   height: 60px;
-  width: 100%; }
+  width: 100%;
+  margin-top: 30px; }
 
 .details {
   width: 1200px;

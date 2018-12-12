@@ -8,7 +8,11 @@ var data=(function(){
             var _this=this;
             $selector.onclick=function(e){
                 e=e||window.event;
+                var target=e.target||e.srcElement;
             }
+        },
+        getData(){
+           sendAjax('server/json/nubiaX.json')
         }
     }
 }())
