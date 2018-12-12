@@ -1,15 +1,4 @@
 @charset "UTF-8";
-/* 通用 */
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none; }
-
-body {
-  width: 100%;
-  height: 100%; }
-
 #main {
   width: 1200px;
   height: 100%;
@@ -279,7 +268,7 @@ body {
   float: left;
   background: #f4f3ef;
   /* background: #000; */
-  display: inline-block;
+  /* display: inline-block; */
   position: relative; }
 
 .jingxuan-bottom li .jingxuan-bottom-a {
