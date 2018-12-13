@@ -25,7 +25,7 @@ var swiper = (function () {
                 if (index > 0) {
                     index--;
                     $(this).parent().children('.box').children('ul').css('left', -showWidth * index);
-
+                    $(this).parent().children('.arrow-right').css('display', 'block');
 
                 }
             })
@@ -40,7 +40,7 @@ var swiper = (function () {
                 if (index <= _this.$count) {
                     index++;
                     $(this).parent().children('.box').children(".Box").css('left', -showWidth * index);
-                    $(this).parent().children('.arrowRight').css('display', 'none');
+                    $(this).parent().children('.arrow-right').css('display', 'none');
                     console.log(index);
                     console.log(_this.$count);
                 }
@@ -52,7 +52,7 @@ var swiper = (function () {
 swiper.init($('.box'));
 //引入header标签
 function headerReady() {
-    swiper.init();
+    swiper.init($('.box'));
   }
   $("#header-wrap").load("common.html #wrapper", function () {
     headerReady();
