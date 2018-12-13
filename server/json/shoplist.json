@@ -1,0 +1,50 @@
+[
+    {
+        "id":1,
+        "phone":"nubiaX",
+        "color":"深空灰",
+        "name":"nubiaX 深空灰 8GB+128GB",
+        "price":"￥3299",
+        "src":"static/images/images02_small.jpg"
+    },
+    {
+        "id":2,
+        "phone":"nubiaX",
+        "color":"海光兰",
+        "name":"nubiaX  8GB+128GB",
+        "price":"￥3799",
+        "src":"static/images/images05_small.png"
+    },
+    {
+        "id":3,
+        "phone":"nubiaX",
+        "color":"星空典藏版",
+        "name":"nubiaX 星空典藏版 8GB+128GB",
+        "price":"￥5299",
+        "src":"static/images/images09_small.png"
+    },
+    {
+        "id":4,
+        "phone":"Z18",
+        "color":"极夜黑",
+        "name":"Z18 极夜黑 8GB+128GB",
+        "price":"￥3299",
+        "src":"static/images/images13_small.jpg"
+    },
+    {
+        "id":5,
+        "phone":"Z18",
+        "color":"星云红",
+        "name":"Z18 星云红  8GB+128GB",
+        "price":"￥3299",
+        "src":"static/images/images17_small.png"
+    },
+    {
+        "id":6,
+        "phone":"Z18",
+        "color":"梵高星空典藏版",
+        "name":"Z18 梵高星空典藏版 8GB+128GB",
+        "price":"￥3299",
+        "src":"static/images/images21_small.png"
+    }
+]
