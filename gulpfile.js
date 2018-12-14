@@ -81,6 +81,7 @@ gulp.task("miniIndexCss", function () {
 //压缩html
 gulp.task('miniHtml', function () {
 	gulp.src('app/*.html')
+	gulp.src('app/*.json')
 		// .pipe(miniHtml())
         .on('error',function (err) {
             console.log(err);

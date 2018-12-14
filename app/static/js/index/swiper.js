@@ -7,17 +7,15 @@ var swiper = (function () {
         init(ele) {
             this.$ele = $(ele);
             showWidth = this.$ele.width();
-            console.log(showWidth);
+
             this.$ulWidth = $(ele).children('ul').width();
-            console.log(this.$ulWidth);
+        
             this.$count = Math.floor(this.$ulWidth / showWidth);
-            console.log(this.$count)
             this.$list = $('.list');
             this.$contain = $('.contain');
             this.$prevBtn = $('.arrow-left');
             this.$nextBtn = $('.arrow-right');
             this.event();
-            console.log(this.$prevBtn);
         },
         event() {
             var _this = this;
@@ -29,6 +27,31 @@ var swiper = (function () {
 
                 }
             })
+            //用户名显示及退出登录功能
+            $(".p .xiaohuangren").click(function(){
+                if($(".loginname").html()==""){
+                    location.assign("login.html");
+                }else{
+                    return false;
+                    preventDefault();
+                }
+            })
+            $(".header .shop").click(function(){
+                if($(".loginname").html()==""){
+                    window.location.assign("login.html");
+                }else if(localStorage[$(".loginname").html()]==""){
+                    window.location.assign("blank_shopcar.html");
+                }else{
+                    window.location.assign("shop-car.html");
+                }
+            })
+            $(".quit").click(function(){
+                $(".loginname").html("");
+                document.cookie='tel=$(".loginname").html();max-age=-1';
+            })
+            $(".loginname").html(document.cookie.split("=")[1]);
+            
+
             $(".slide").on('mouseenter', 'li', function () {
                 $(this).children('.list').stop().slideDown(300);
                 $(this).children('.list').css("display", "block");
@@ -41,8 +64,6 @@ var swiper = (function () {
                     index++;
                     $(this).parent().children('.box').children(".Box").css('left', -showWidth * index);
                     $(this).parent().children('.arrowRight').css('display', 'none');
-                    console.log(index);
-                    console.log(_this.$count);
                 }
             })
 
@@ -58,3 +79,4 @@ function headerReady() {
     headerReady();
   });
   $("#footer-wrap").load("common.html #footer");
+

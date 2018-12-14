@@ -27,13 +27,58 @@ i, em {
   height: 65px;
   background-color: #282828; }
 
-.p i {
+.p a {
   position: relative;
+  width: 16px;
+  height: 21px;
+  display: inline-block;
   left: 1045px;
-  top: -45px;
+  top: -45px; }
+
+.p a .usemsg {
+  position: absolute;
+  left: -45px;
+  top: 25px;
+  z-index: 180;
+  width: 80px;
+  height: 60px;
+  text-align: center;
+  display: none;
+  background-color: #282828; }
+
+.p .xiaohuangren {
+  height: 65px; }
+
+.p a:hover .usemsg {
+  display: block; }
+
+.p a .usemsg .loginname {
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  display: block;
+  background-color: #fff;
+  line-height: 20px; }
+
+.p a .usemsg .quit {
+  width: 80px;
+  height: 20px;
+  border: 0;
+  float: left;
   color: #fff;
-  font-size: 14px;
-  display: inline-block; }
+  cursor: pointer;
+  outline: none;
+  background-color: #f25c4a;
+  text-align: center; }
+
+.p a i {
+  color: #fff;
+  font-size: 14px; }
 
 .p i:hover {
   color: #999; }
@@ -42,8 +87,7 @@ i, em {
   width: 1200px;
   height: 65px;
   background-color: #282828;
-  margin: 0 auto;
-  overflow: hidden; }
+  margin: 0 auto; }
 
 .logo {
   width: 140px;
@@ -172,10 +216,11 @@ i, em {
 
 .shop {
   position: relative;
-  float: right;
+  /* float: right; */
   width: 120px;
   height: 65px;
-  top: -86px;
+  top: -130px;
+  left: 1080px;
   color: #fff;
   padding-left: 26px;
   box-sizing: border-box;

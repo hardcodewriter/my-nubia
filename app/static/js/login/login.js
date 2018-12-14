@@ -22,11 +22,13 @@ var loginCheck = (function() {
 					})
 						.then(res => {	
 							$span.innerHTML = "";
-							// document.cookie=`$inps[0].value`;
+							document.cookie='tel='+$inps[0].value;
+							console.log($inps[0].value);
 							self.success($inps[0]);
 						})
 						.catch(res => {
 							console.log(res)
+							return false;
 							// $span.innerHTML = "手机号或密码错误,请重新输入";
 						})
 				}

@@ -21,11 +21,93 @@
       color: #747774; }
     #shop-car-wrap .contain table {
       width: 100%; }
-      #shop-car-wrap .contain table td {
+      #shop-car-wrap .contain table thead td {
         text-align: center;
         height: 50px;
         line-height: 50px;
         color: #727171;
         background: #f7f9f9;
         font-size: 14px;
-        border: 1px solid #eef0f0 !important; }
+        border: 1px solid #eef0f0; }
+      #shop-car-wrap .contain table tbody tr {
+        height: 120px;
+        background-color: #fff; }
+        #shop-car-wrap .contain table tbody tr td {
+          border: 1px solid #eef0f0;
+          text-align: center; }
+          #shop-car-wrap .contain table tbody tr td .phoneImg {
+            width: 100px;
+            height: 100px;
+            vertical-align: middle; }
+          #shop-car-wrap .contain table tbody tr td .delImg {
+            width: 20px;
+            height: 20px;
+            margin: 0 auto;
+            background-size: 100%;
+            background: url(../images/xubox_close.png) no-repeat;
+            background-position: 0px -2px; }
+          #shop-car-wrap .contain table tbody tr td .delImg:hover {
+            background-position: 0px -27px; }
+          #shop-car-wrap .contain table tbody tr td .shopcar-count {
+            border: 1px solid #e0d7e3;
+            border-radius: 4px;
+            width: 110px;
+            height: 28px;
+            line-height: 28px;
+            display: inline-block; }
+            #shop-car-wrap .contain table tbody tr td .shopcar-count .reduceCount {
+              width: 25px;
+              height: 28px;
+              line-height: 28px;
+              text-align: center;
+              float: left; }
+            #shop-car-wrap .contain table tbody tr td .shopcar-count .listCount {
+              border: 1px solid #e0d7e3;
+              box-sizing: border-box;
+              height: 30px;
+              margin-top: -1px;
+              line-height: 30px;
+              text-align: center;
+              float: left;
+              width: 60px; }
+            #shop-car-wrap .contain table tbody tr td .shopcar-count .addCount {
+              width: 25px;
+              height: 28px;
+              line-height: 28px;
+              text-align: center;
+              float: left; }
+      #shop-car-wrap .contain table tfoot {
+        width: 100%;
+        height: 120px; }
+        #shop-car-wrap .contain table tfoot .tfoot-sum {
+          height: 60px; }
+          #shop-car-wrap .contain table tfoot .tfoot-sum td {
+            height: 60px;
+            line-height: 60px;
+            border: 1px solid #eef0f0; }
+            #shop-car-wrap .contain table tfoot .tfoot-sum td div {
+              width: 200px;
+              height: 100%;
+              line-height: 60px;
+              margin-left: 900px; }
+              #shop-car-wrap .contain table tfoot .tfoot-sum td div span {
+                width: 20px;
+                height: 60px;
+                line-height: 60px;
+                color: #e8380d; }
+        #shop-car-wrap .contain table tfoot .tfoot-buy {
+          height: 60px; }
+          #shop-car-wrap .contain table tfoot .tfoot-buy td {
+            text-align: center;
+            width: 250px;
+            height: 60px;
+            line-height: 60px;
+            margin: 0 auto; }
+            #shop-car-wrap .contain table tfoot .tfoot-buy td a {
+              width: 100px;
+              height: 30px;
+              line-height: 30px;
+              color: #fff;
+              display: inline-block;
+              border-radius: 5px;
+              background: #e8380d; }

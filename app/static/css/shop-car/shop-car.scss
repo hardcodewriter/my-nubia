@@ -21,6 +21,7 @@
         }
         table{
             width: 100%;
+            thead{
                 td{
                     text-align: center;
                     height: 50px;
@@ -28,9 +29,110 @@
                     color: #727171;
                     background: #f7f9f9;
                     font-size: 14px;
-                    border: 1px solid #eef0f0 !important;
+                    border: 1px solid #eef0f0;
                 }
-            
+            }
+            tbody{
+                tr{
+                    height: 120px;
+                    background-color:#fff;
+                    td{
+                        border: 1px solid #eef0f0;
+                        text-align: center;
+                        .phoneImg{
+                            width: 100px;
+                            height: 100px;
+                            vertical-align: middle;
+                        }
+                        .delImg{
+                            width: 20px;
+                            height: 20px;
+                            margin:0 auto;
+                            background-size: 100%;
+                            background: url(../images/xubox_close.png) no-repeat;
+                            background-position: 0px -2px;
+                        }
+                        .delImg:hover{
+                            background-position: 0px -27px;
+                        }
+                        .shopcar-count{
+                            border: 1px solid #e0d7e3;
+                            border-radius: 4px;
+                            width:110px;
+                            height: 28px;
+                            line-height: 28px;
+                            display: inline-block;
+                            .reduceCount{
+                                width:25px;
+                                height: 28px;
+                                line-height: 28px;
+                                text-align: center;
+                                float: left; 
+                            }
+                            .listCount{
+                                border: 1px solid #e0d7e3;
+                                box-sizing: border-box; 
+                                height: 30px;
+                                margin-top: -1px;
+                                line-height: 30px;
+                                text-align: center;
+                                float: left; 
+                                width: 60px;
+                            }
+                            .addCount{
+                                width:25px;
+                                height: 28px;
+                                line-height: 28px;
+                                text-align: center;
+                                float: left; 
+                            }
+                        }
+                    }                
+                }
+            }
+            tfoot{
+                width: 100%;
+                height: 120px;
+                .tfoot-sum{
+                    height: 60px;
+                    td{
+                       height: 60px;
+                       line-height: 60px;
+                       border: 1px solid #eef0f0;
+                       div{
+                           width: 200px;
+                           height: 100%;
+                           line-height: 60px;
+                           margin-left: 900px;
+                           span{
+                               width: 20px;
+                               height: 60px;
+                               line-height: 60px;
+                               color: #e8380d;
+                           }
+                       }
+                    }
+                }
+                .tfoot-buy{
+                    height: 60px;
+                    td{
+                        text-align: center;
+                        width: 250px;
+                        height: 60px;
+                        line-height: 60px;
+                        margin: 0 auto;
+                        a{
+                            width: 100px;
+                            height: 30px;
+                            line-height: 30px;
+                            color: #fff;
+                            display: inline-block;
+                            border-radius:5px; 
+                            background: #e8380d;
+                        }
+                    }
+                }
+            }
         }
     }
 }

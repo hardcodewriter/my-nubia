@@ -66,8 +66,8 @@
                 </ul>
         </div>
         <span class="total" style="margin-left:36px;display: block;" >总计:<i class="price"> ￥ 3299</i></span>
-        <button>立即购买</button>
-        <button>加入购物车</button>
+        <button class="go-buy">立即购买</button>
+        <button class="join-shopcar">加入购物车</button>
     </div>
 </div>
     <!-- 商品详情 -->
@@ -102,8 +102,8 @@
     //        $('.show-image').attr('src','static/images/images05_big.png')
     //    })
     $('#selector').children().eq(0).click(function(){
-        $(this).siblings().children('a').css('color','#000');
-        $(this).children().css('color','#e83100');
+        $(this).siblings().children('a').css('color','#000').removeClass("select");
+        $(this).children().css('color','#e83100').addClass("select");
         $('.show-image').children().attr('src','static/images/images02_big.png');
         $('.show-big-image').children().attr('src','static/images/images02_largest.png');
         $('.img-box').children().children().children().eq(0).attr('src','static/images/images02_small.png');
@@ -114,8 +114,8 @@
         
     })
        $('#selector').children().eq(2).click(function(){
-        $(this).siblings().children('a').css('color','#000');
-        $(this).children().css('color','#e83100');
+        $(this).siblings().children('a').css('color','#000').removeClass("select");
+        $(this).children().css('color','#e83100').addClass("select");
         $('.show-image').children().attr('src','static/images/images05_big.png');
         $('.show-big-image').children().attr('src','static/images/images05_largest.png');
         // let index=0,a=5;
@@ -130,8 +130,8 @@
        })
 
        $('#selector').children().eq(1).click(function(){
-        $(this).siblings().children('a').css('color','#000');
-        $(this).children().css('color','#e83100');
+        $(this).siblings().children('a').css('color','#000').removeClass("select");
+        $(this).children().css('color','#e83100').addClass("select");
         $('.show-image').children().attr('src','static/images/images09_big.png');
         $('.show-big-image').children().attr('src','static/images/images09_largest.png');
         $('.img-box').children().children().children().eq(0).attr('src','static/images/images09_small.png');

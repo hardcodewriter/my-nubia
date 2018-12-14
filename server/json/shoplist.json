@@ -5,12 +5,12 @@
         "color":"深空灰",
         "name":"nubiaX 深空灰 8GB+128GB",
         "price":"￥3299",
-        "src":"static/images/images01_small.png"
+        "src":"static/images/images02_small.png"
     },
     {
         "id":2,
         "phone":"nubiaX",
-        "color":"海光兰",
+        "color":"海光蓝",
         "name":"nubiaX  8GB+128GB",
         "price":"￥3799",
         "src":"static/images/images05_small.png"
