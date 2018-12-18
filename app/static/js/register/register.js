@@ -52,14 +52,14 @@ var checkInfor = (function() {
 		event() {
 			let self = this;
 			for(let i=0;i<3;i++) {
-				$inps[i].onblur = e => {
+				$inps[i].onmouseleave = e => {
 					e = e || window.event;	
 					var checkForm = new CheckForm();
 					if($inps[i].name==="telphone"){
 						let $div = $inps[i].parentNode.querySelector("span");
 						if(checkForm[$inps[i].name]($inps[i].value)) {
 							if($inps[i].name === 'telphone') {
-								sendAjax("http://localhost:1234/php/my-nubia/server/php/login.php", {
+								sendAjax(apiObj.register, {
 									data: {
 										"telphone": $inps[i].value
 									}	

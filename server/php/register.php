@@ -20,7 +20,7 @@ $res = $link -> query($sql);
 
 if ($res == true) {
     echo "<script> 
-    alert("注册成功，将返回登录页面")
+    alert('注册成功，将返回登录页面')
     location.assign('http://localhost:7777/app/login.html');
     </script>";
 }else {

@@ -18,19 +18,19 @@
         <div class="main_left">
             <div class="Box">
                 <div class="show-image">
-                <img src="static/images/images09_big.png">
+                <img src="static/images/images13_big.jpg">
                 <span class="filter"></span>
             </div>
             <div class="show-big-image">
-                <img src="static/images/images09_largest.png" id="big-image">    
+                <img src="static/images/images13_largest.jpg" id="big-image">    
             </div>
             <div class="box">
                 <ul class="img-box">
                     <!-- 加个select，当点击的时候边框变为红色 -->
-                    <li class="select"><a href="javascript:;" ><img src="static/images/images09_small.png"></a></li>
-                    <li><a href="javascript:;"><img src="static/images/images10_small.png"></a></li>
-                    <li><a href="javascript:;"><img src="static/images/images11_small.png"></a></li>
-                    <li><a href="javascript:;"><img src="static/images/images12_small.png"></a></li>
+                    <li class="select"><a href="javascript:;" ><img src="static/images/images13_small.jpg"></a></li>
+                    <li><a href="javascript:;"><img src="static/images/images14_small.png"></a></li>
+                    <li><a href="javascript:;"><img src="static/images/images15_small.png"></a></li>
+                    <li><a href="javascript:;"><img src="static/images/images16_small.png"></a></li>
                 </ul>
             </div>
         </div>
@@ -41,20 +41,20 @@
             <p class="main_right_p">
                 <span style="font-size: 30px; color: rgb(0, 0, 0);">购买Z18</span>
                 <span  class="price" style="font-size: 25px; margin-left: 10px; color: rgb(255, 103, 0);">
-                    2999.00</span>
+                    3299.00</span>
                 <span style="float: right; margin-top: 25px; "><a href="#img">查看详情</a></span>
             </p>
             <p class="sellPoint">
-                <span style="color: rgb(255, 77, 77); font-size: 18px; font-weight: 800;">【12.12号0点】黑金版8+256G开抢</span>
+                <span style="color: rgb(255, 77, 77); font-size: 18px; font-weight: 800;">【12.12号0点】黑金版8+128G开抢</span>
                 </p>
             <div class="phone_net">
                 <p class="phone_net_p">
                     1、选择颜色
                 </p>
                 <ul id="selector">
-                    <li><a href="">深空灰</a></li>
-                    <li><a href="" class="select">海光蓝</a></li>
-                    <li><a href="">星空典藏版</a></li>
+                    <li><a href="javascrpt:;" class="select">极夜黑</a></li>
+                    <li><a href="javascrpt:;">星云红</a></li>
+                    <li><a href="javascrpt:;">梵高星空典藏版</a></li>
                 </ul>
         </div>
         <div class="phone_net">
@@ -65,9 +65,9 @@
                     <li><a href="" class="select">8GB+128GB</a></li>
                 </ul>
         </div>
-        <span class="total" style="margin-left:36px;display: block;" >总计:<i class="price"> ￥ 2999</i></span>
-        <button>立即购买</button>
-        <button>加入购物车</button>
+        <span class="total" style="margin-left:36px;display: block;" >总计:<i class="price"> ￥ 3299</i></span>
+        <button class="go-buy">立即购买</button>
+        <button class="join-shopcar">加入购物车</button>
     </div>
 </div>
     <!-- 商品详情 -->
@@ -80,7 +80,7 @@
           </ul>
       </div></div>
       <div id="img">
-          <img src="static/images/banner5.jpg">
+          <img src="static/images/banner10.jpg">
           <img src="static/images/banner6.jpg">
           <img src="static/images/banner7.jpg">
           <img src="static/images/banner8.jpg">
@@ -95,7 +95,124 @@
     <script>
             glass.init(2)
     </script>
+    <script>
+        //    $('#selector').on('click','li',function(){
+        //        $(this).siblings().children('a').css('color','#000');
+        //        $(this).children().css('color','#e83100');
+        //        $('.show-image').attr('src','static/images/images05_big.png')
+        //    })
+        $(".join-shopcar").click(function(){
+        window.location.href("shop-car.html");
+        })
+        $('#selector').children().eq(0).click(function(){
+            $(this).siblings().children('a').css('color','#000').removeClass("select");
+        $(this).children().css('color','#e83100').addClass("select");
+            $('.show-image').children().attr('src','static/images/images13_big.jpg');
+            $('.show-big-image').children().attr('src','static/images/images13_largest.jpg');
+            $('.img-box').children().children().children().eq(0).attr('src','static/images/images13_small.jpg');
+            $('.img-box').children().children().children().eq(1).attr('src','static/images/images14_small.png');
+            $('.img-box').children().children().children().eq(2).attr('src','static/images/images15_small.png');
+            $('.img-box').children().children().children().eq(3).attr('src','static/images/images16_small.png');
+            $('.price').html('￥ 3299');
+            
+        })
+           $('#selector').children().eq(2).click(function(){
+            $(this).siblings().children('a').css('color','#000').removeClass("select");
+        $(this).children().css('color','#e83100').addClass("select");
+            $('.show-image').children().attr('src','static/images/images21_big.png');
+            $('.show-big-image').children().attr('src','static/images/images21_largest.png');
+            // let index=0,a=5;
+            // for(let i=0;i<3;i++){
     
+            // }
+            $('.img-box').children().children().children().eq(0).attr('src','static/images/images21_small.png');
+            $('.img-box').children().children().children().eq(1).attr('src','static/images/images22_small.png');
+            $('.img-box').children().children().children().eq(2).attr('src','static/images/images23_small.png');
+            $('.img-box').children().children().children().eq(3).attr('src','static/images/images24_small.png');
+            $('.price').html('￥ 3799');
+           })
+    
+           $('#selector').children().eq(1).click(function(){
+            $(this).siblings().children('a').css('color','#000').removeClass("select");
+        $(this).children().css('color','#e83100').addClass("select");
+            $('.show-image').children().attr('src','static/images/images17_big.png');
+            $('.show-big-image').children().attr('src','static/images/images17_largest.png');
+            $('.img-box').children().children().children().eq(0).attr('src','static/images/images17_small.png');
+            $('.img-box').children().children().children().eq(1).attr('src','static/images/images18_small.png');
+            $('.img-box').children().children().children().eq(2).attr('src','static/images/images19_small.png');
+            $('.img-box').children().children().children().eq(3).attr('src','static/images/images20_small.png');
+            $('.price').html('￥ 3299');
+           })
+        </script>
+        <script>
+            var pushData=(function(){
+    var dataNum=[];
+    return{
+        init(){
+            this.event();  
+        },
+        event(){
+            var _this=this;
+            $('.join-shopcar').click(function(){
+                _this.getData();
+                window.location.assign("shop-car.html")
+            })
+           
+        },
+        getData(){
+            var _this=this;
+           sendAjax('shoplist.json')
+           .then(res=>{
+                res=JSON.parse(res);
+                //获取相对应的json对象数据
+                //先获取当前选择的颜色款
+                dataNum=[];
+                let colorType=$('#selector').children().children(".select").html();
+                for(let i=0;i<res.length;i++){
+                    if(res[i].phone=="Z18"&&res[i].color==colorType){
+                        dataNum.push(res[i]);
+                    }
+                }
+                console.log(dataNum)
+                // this.data=res;
+                this.insertData(dataNum);
+           })
+        },
+        insertData(data){
+            //先获取当前登录名
+            var user=$(".loginname").html();
+            //获取本地存储的key值为user的数据，如果没有就创建空数组字符串
+            var shoplist=localStorage.getItem($(".loginname").html())||"[]";
+            //将json字符串转化对象
+            shoplist=JSON.parse(shoplist);
+            console.log(shoplist)
+            console.log(data)
+            //把新数据添加，同时判断新添加的数据是否已经添加
+            
+            for(let j=0;j<data.length;j++){	
+                let flag=true;
+                for(let i=0;i<shoplist.length;i++){
+                    if(data[j].id===shoplist[i].id){
+                        // shoplist[i].count = +shoplist[i].count  +1;
+                        flag=false;
+                        break;
+                    }else{
+                        console.log(shoplist[i])
+                        shoplist[i].count=1;
+                    }
+                }
+                if(flag){
+				    shoplist.push(data[j]);
+                }
+            }  
+            console.log(localStorage);
+            localStorage[user]=JSON.stringify(shoplist);
+           console.log(localStorage)
+        }
+    }
+}())
+pushData.init();
+        </script>
 </body>
 
 </html>

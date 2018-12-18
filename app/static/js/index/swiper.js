@@ -5,17 +5,18 @@ var swiper = (function () {
     var index = 0;
     return {
         init(ele) {
+
             this.$ele = $(ele);
             showWidth = this.$ele.width();
 
             this.$ulWidth = $(ele).children('ul').width();
-        
+
             this.$count = Math.floor(this.$ulWidth / showWidth);
             this.$list = $('.list');
             this.$contain = $('.contain');
             this.$prevBtn = $('.arrow-left');
             this.$nextBtn = $('.arrow-right');
-            this.event();
+            this.event()
         },
         event() {
             var _this = this;
@@ -23,34 +24,35 @@ var swiper = (function () {
                 if (index > 0) {
                     index--;
                     $(this).parent().children('.box').children('ul').css('left', -showWidth * index);
-
+                    $(this).parent().children('.arrow-right').css('display', 'block');
 
                 }
             })
+
             //用户名显示及退出登录功能
-            $(".p .xiaohuangren").click(function(){
-                if($(".loginname").html()==""){
+            $(".p .xiaohuangren").click(function () {
+                if ($(".loginname").html() == "") {
                     location.assign("login.html");
-                }else{
+                } else {
                     return false;
                     preventDefault();
                 }
             })
-            $(".header .shop").click(function(){
-                if($(".loginname").html()==""){
+            $(".header .shop").click(function () {
+                if ($(".loginname").html() == "") {
                     window.location.assign("login.html");
-                }else if(localStorage[$(".loginname").html()]==""){
+                } else if (localStorage[$(".loginname").html()] == "") {
                     window.location.assign("blank_shopcar.html");
-                }else{
+                } else {
                     window.location.assign("shop-car.html");
                 }
             })
-            $(".quit").click(function(){
+            $(".quit").click(function () {
                 $(".loginname").html("");
-                document.cookie='tel=$(".loginname").html();max-age=-1';
+                document.cookie = 'tel=$(".loginname").html();max-age=-1';
             })
             $(".loginname").html(document.cookie.split("=")[1]);
-            
+
 
             $(".slide").on('mouseenter', 'li', function () {
                 $(this).children('.list').stop().slideDown(300);
@@ -63,20 +65,19 @@ var swiper = (function () {
                 if (index <= _this.$count) {
                     index++;
                     $(this).parent().children('.box').children(".Box").css('left', -showWidth * index);
-                    $(this).parent().children('.arrowRight').css('display', 'none');
+                    $(this).parent().children('.arrow-right').css('display', 'none');
+                    console.log(index);
+                    console.log(_this.$count);
                 }
             })
 
         }
     }
 }())
-swiper.init($('.box'));
+// swiper.init($('.box'));
 //引入header标签
-function headerReady() {
-    swiper.init();
-  }
-  $("#header-wrap").load("common.html #wrapper", function () {
-    headerReady();
-  });
-  $("#footer-wrap").load("common.html #footer");
+$("#header-wrap").load("common.html #wrapper", function () {
+    swiper.init($('.box'));
+});
+$("#footer-wrap").load("common.html #footer");
 
